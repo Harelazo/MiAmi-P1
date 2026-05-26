@@ -1,0 +1,386 @@
+<!DOCTYPE html><html dir="rtl" lang="he" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Miami Hotel Ashdod</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700;800&amp;family=Playfair+Display:wght@600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-variant": "#e4e2dd",
+                      "surface-container-highest": "#e4e2dd",
+                      "primary-fixed-dim": "#aec9ed",
+                      "on-primary": "#ffffff",
+                      "secondary-container": "#b0d1fd",
+                      "primary-container": "#0f2d4a",
+                      "secondary": "#3f6086",
+                      "surface-tint": "#466080",
+                      "on-secondary-container": "#395a80",
+                      "outline-variant": "#c3c6ce",
+                      "on-primary-fixed": "#001d36",
+                      "surface-container": "#f0eee9",
+                      "surface": "#fbf9f4",
+                      "primary-fixed": "#d2e4ff",
+                      "on-secondary": "#ffffff",
+                      "surface-bright": "#fbf9f4",
+                      "outline": "#73777e",
+                      "tertiary-container": "#3c2800",
+                      "secondary-fixed": "#d2e4ff",
+                      "tertiary-fixed-dim": "#efbf6c",
+                      "error": "#ba1a1a",
+                      "gold-accent": "#b48a3d",
+                      "primary": "#00182f",
+                      "on-tertiary-fixed": "#271900",
+                      "on-background": "#1b1c19",
+                      "tertiary-fixed": "#ffdeaa",
+                      "on-tertiary": "#ffffff",
+                      "on-tertiary-container": "#b68c3f",
+                      "inverse-primary": "#aec9ed",
+                      "surface-dim": "#dbdad5",
+                      "on-secondary-fixed": "#001d36",
+                      "inverse-on-surface": "#f2f1ec",
+                      "sand-dark": "#e5dec9",
+                      "inverse-surface": "#30312e",
+                      "surface-container-lowest": "#ffffff",
+                      "on-error": "#ffffff",
+                      "on-primary-container": "#7a95b7",
+                      "glass-white": "rgba(255, 255, 255, 0.95)",
+                      "on-error-container": "#93000a",
+                      "on-secondary-fixed-variant": "#26496d",
+                      "on-primary-fixed-variant": "#2e4867",
+                      "error-container": "#ffdad6",
+                      "tertiary": "#221500",
+                      "surface-container-high": "#eae8e3",
+                      "background": "#fbf9f4",
+                      "on-tertiary-fixed-variant": "#5f4100",
+                      "on-surface-variant": "#43474d",
+                      "on-surface": "#1b1c19",
+                      "surface-container-low": "#f5f3ee",
+                      "status-emerald": "#059669",
+                      "secondary-fixed-dim": "#a8c9f5"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "section-md": "64px",
+                      "container-max": "1280px",
+                      "section-lg": "80px",
+                      "gutter": "32px",
+                      "section-sm": "48px",
+                      "base": "4px"
+              },
+              "fontFamily": {
+                      "label-meta": ["Assistant"],
+                      "display-hero": ["Assistant"],
+                      "body-main": ["Assistant"],
+                      "accent-serif": ["Playfair Display"],
+                      "display-hero-mobile": ["Assistant"],
+                      "headline-section": ["Assistant"],
+                      "headline-card": ["Assistant"],
+                      "nav-link": ["Assistant"]
+              },
+              "fontSize": {
+                      "label-meta": ["12px", {"lineHeight": "1.0", "fontWeight": "500"}],
+                      "display-hero": ["60px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                      "body-main": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "accent-serif": ["18px", {"lineHeight": "normal", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "display-hero-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "800"}],
+                      "headline-section": ["30px", {"lineHeight": "1.2", "fontWeight": "800"}],
+                      "headline-card": ["20px", {"lineHeight": "1.4", "fontWeight": "700"}],
+                      "nav-link": ["15px", {"lineHeight": "normal", "fontWeight": "600"}]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        .clip-slant {
+            clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+        }
+        @media (max-width: 768px) {
+            .clip-slant {
+                clip-path: polygon(0 0, 100% 0, 100% 98%, 0 100%);
+            }
+        }
+    </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"></head>
+<body class="bg-surface text-on-surface font-body-main text-body-main antialiased selection:bg-gold-accent selection:text-white">
+<!-- TopNavBar: Updated Header matching IMAGE_3 -->
+<nav class="bg-white shadow-sm docked full-width top-0 sticky z-40 transition-all duration-300">
+<div class="flex flex-row justify-between items-center px-gutter w-full max-w-container-max mx-auto h-20 px-8">
+<!-- Hamburger Menu Button (Left) -->
+<button class="text-primary p-2 hover:bg-surface-container rounded-lg transition-colors" id="mobile-menu-trigger">
+<span class="material-symbols-outlined text-4xl">menu</span>
+</button>
+<!-- Logo (Right) -->
+<div class="flex-shrink-0">
+<a class="block hover:opacity-80 transition-opacity" href="{{DATA:SCREEN:SCREEN_70}}">
+<img alt="Miami Hotel Ashdod Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfln3QJRSEBXnYt6NuUoTj2Mh65AoHHSnkNuaP2pzC9qCJ7hqEDCINqVupupRQRa1UnU4IJ59SNMW7c-7FgxoJtcNG3wGvk-i3NvyNrnyV08LbLCrkBmS72-zulopyR40Fz-9ivXeJTVNHNx5tRfT1pFZbyyD2cdcHlPRU62MOel740wAwOJaiwSzInyoQ4mFrE5SW-BP2e5S4h522_djjniERn5Jqd-uH_Lvhu1W-pbSQhAWb6BM6-d7LBW7AMpjNu3NKKqsIHy_R">
+</a>
+</div>
+</div>
+</nav><div class="w-full bg-cover bg-center py-2.5" style="background-color: rgb(15, 41, 66);"><div class="flex items-center justify-center w-full h-full text-white font-body-main text-sm md:text-base" dir="rtl">כשרות הרב מחפוד | זמני כניסת שבת: 19:00 | זמני יציאת שבת: 20:00</div></div>
+<!-- Hero Section -->
+<header class="relative w-full min-h-[600px] flex items-center justify-center overflow-hidden clip-slant bg-primary-container h-[650px]" style="min-height: 600px;">
+<!-- Background Image -->
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-60 mix-blend-overlay" data-alt="A breathtaking, cinematic wide-angle view of a luxury Mediterranean boutique hotel exterior at golden hour. The elegant architecture features clean, corporate modern lines bathed in warm sunlight, overlooking a pristine, sandy beach and deep azure ocean waters. The atmosphere is highly sophisticated, tranquil, and exclusive, reflecting a high-end coastal resort experience with soft, atmospheric lighting and a refined color palette of deep blues and warm sandy neutrals." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHq194j6dntIGAE5x59jmlXJ4G7p3vVmxoD_dMbB9qDXdrFI7pVrEiyxRzYuokFY-J0gWR4Yhd6bukwnLk0CPkhoaEIMy9nKMgWL_faY495EHj_S7o3aOHPtr03e8ZcisrQrxqM4N3PPxHZUJrFlcJST_te3CmuR3X7ZWPaNJ7bURE3XN82YfjTdguE5m4nHo9X_ekSN9eS3-sOzjvBLxR5C1u-icnfENRLq2gzGn2nEGlWcDNqN7i2Z11scYj7zv2KvEFp02WDXRB">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
+</div>
+<!-- Content -->
+<div class="relative z-10 max-w-container-max mx-auto px-gutter text-center flex flex-col items-center">
+<span class="font-accent-serif text-accent-serif text-gold-accent mb-4 tracking-widest uppercase">ברוכים הבאים למיאמי אשדוד</span>
+<h1 class="font-display-hero-mobile text-display-hero-mobile md:font-display-hero md:text-display-hero text-on-primary mb-6 max-w-4xl leading-tight">
+                יוקרה על הים, <br> <span class="text-transparent bg-clip-text bg-gradient-to-l from-gold-accent to-tertiary-fixed">חוויית אירוח מושלמת.</span>
+</h1>
+<p class="font-body-main text-body-main text-surface-container-high max-w-2xl mb-10 text-lg opacity-90">
+                מלון בוטיק על רצועת החוף היפהפייה של אשדוד. אנו מציעים שילוב נדיר של אלגנטיות מודרנית, אווירה משפחתית חמה, והקפדה מחמירה על כשרות למהדרין.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="bg-gold-accent text-on-primary font-nav-link text-nav-link px-8 py-3.5 rounded shadow-lg hover:-translate-y-[2px] hover:shadow-xl transition-all duration-300" href="{{DATA:SCREEN:SCREEN_20}}">
+                    הזמן חופשה
+                </a>
+<a class="bg-glass-white backdrop-blur-sm text-primary font-nav-link text-nav-link px-8 py-3.5 rounded shadow-md hover:bg-white transition-all duration-300 border border-transparent hover:border-gold-accent/30" href="{{DATA:SCREEN:SCREEN_12}}">
+                    גלו את המלון
+                </a>
+</div>
+</div>
+</header>
+<!-- Welcome Section (Boutique Experience) -->
+<section class="py-section-lg px-gutter bg-surface relative z-10 -mt-10" id="about">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<!-- Text Content -->
+<div class="order-2 lg:order-1">
+<div class="inline-flex items-center gap-2 mb-4">
+<span class="w-8 h-px bg-gold-accent"></span>
+<span class="font-label-meta text-label-meta text-gold-accent uppercase tracking-wider">חוויית בוטיק</span>
+</div>
+<h2 class="font-headline-section text-headline-section text-primary mb-6">
+                        לנשום את הים,<br> להרגיש בבית.
+                    </h2>
+<p class="font-body-main text-body-main text-on-surface-variant mb-6">
+                        מלון מיאמי אשדוד תוכנן בקפידה כדי להעניק לכם מפלט של שקט ויוקרה. עם עיצוב השואב השראה מגווני הים והחול, כל פרט במלון נועד ליצור תחושת רוגע אינסופית.
+                    </p>
+<p class="font-body-main text-body-main text-on-surface-variant mb-8">
+                        אנו גאים להציע חוויית אירוח המותאמת במיוחד לציבור הדתי, עם כשרות מהודרת של הרב מחפוד, פתרונות שבת חכמים, ואווירה המכבדת את המסורת מבלי להתפשר על סטנדרט של מלון פאר בינלאומי.
+                    </p>
+<div class="grid grid-cols-2 gap-6">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center flex-shrink-0 text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 0;">pool</span>
+</div>
+<div>
+<h4 class="font-nav-link text-nav-link text-primary mb-1">קרבה לים</h4>
+<p class="text-sm text-on-surface-variant">מרחק נגיעה מרצועת החוף המטופחת.</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center flex-shrink-0 text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 0;">restaurant</span>
+</div>
+<div>
+<h4 class="font-nav-link text-nav-link text-primary mb-1">קולינריה משובחת</h4>
+<p class="text-sm text-on-surface-variant">תפריט עשיר בכשרות למהדרין.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Bento Grid Images -->
+<div class="order-1 lg:order-2 grid grid-cols-2 gap-4 h-[500px]">
+<div class="col-span-1 rounded-xl overflow-hidden shadow-md group">
+<div class="w-full h-full bg-surface-container bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A meticulously designed, high-end boutique hotel room interior featuring a luxurious king-sized bed with crisp white linens. The decor follows a modern-traditionalist aesthetic with warm sandy neutral tones and subtle gold accents. Large windows let in soft, diffused natural light, revealing a partial view of the ocean. The atmosphere is serene, inviting, and impeccably clean." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBq8jiGRn9fKZTfe65GRi35TjibAp_mRwOuOKEZGKNHbId06XkDkeuz2BeszRVyYrTzZN13JRO-mivZtiPi1X7UQPAcyYfQcrpYCsrMUp9d7tymRE78cgXjpBqrmDym_DjPntCDEJLqTMXPe47wN1x9TPgWdEUkNN-xREz_zmr-gcYF77wwHNkzE4jghDtNohIZEw1pVEax2eVqJhhmjQOOn71R4BzdW9vfOlA4rSkp5-_Ykg0lAIRYaHxQZ-diVEKXxkH-oK4m9MaB&quot;);">
+</div>
+</div>
+<div class="col-span-1 grid grid-rows-2 gap-4">
+<div class="rounded-xl overflow-hidden shadow-md group">
+<div class="w-full h-full bg-surface-container bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A beautifully plated gourmet dish presented on an elegant dining table set for a formal meal in a luxury hotel restaurant. The setting features pristine white plates, polished silver cutlery, and crystal glasses, reflecting a high-end culinary experience. The lighting is warm and inviting, emphasizing the sophisticated, corporate modern style of the dining room." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDecwd7Xk5sIQFf9yNCRptR5AUUM9FHukChMNSzWUcXW6H9R-Bw43RChbD4oNBTB8J40bGLb_Xfl3qAzvgkOrC1RaZMenvQEy5qWOYcHGFL6rIf48WmVudeH70tjpXJbz04qjeCrERvzs8B-ImuEVKkzmkiYgVZm1Dak_9iu3Nuvw-IxTgqF9lVmfuKLxj5smqFcDkLrt1Se2Ljx0Ct7xb7dguHtHjVtmaWwTsVEAsv8sKuJ59pk3yIiwberUj9knvi4EXcj5WWPCp5&quot;);">
+</div>
+</div>
+<div class="rounded-xl overflow-hidden shadow-md bg-primary-container p-6 flex flex-col justify-center items-center text-center relative group">
+<div class="absolute inset-0 bg-gold-accent opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+<span class="material-symbols-outlined text-gold-accent text-4xl mb-3" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<h3 class="font-accent-serif text-accent-serif text-on-primary mb-2">דירוג יוקרה</h3>
+<p class="font-label-meta text-label-meta text-surface-container-high">סטנדרט שירות ללא פשרות.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Highlights Section (Events & Shabbat) -->
+<section class="py-section-lg px-gutter bg-surface-container-low border-t border-sand-dark/30 relative">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-12">
+<h2 class="font-headline-section text-headline-section text-primary mb-4">מומחיות באירוח ואירועים</h2>
+<p class="font-body-main text-body-main text-on-surface-variant max-w-2xl mx-auto">
+                    בין אם אתם חוגגים שמחה משפחתית או מארחים כנס מקצועי, אנו מספקים מעטפת מושלמת של אולמות, קולינריה ושירות.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Card 1: Shabbat Hatan -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-md border border-sand-dark hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col group">
+<div class="h-64 overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="An elegant, spacious banquet hall prepared for a festive Shabbat Hatan celebration in a luxury hotel. Long tables are perfectly set with gleaming white tablecloths, fine china, and elegant floral centerpieces in a modern-traditionalist style. The room is bathed in warm, soft lighting, creating a joyous and sophisticated atmosphere suitable for religious family gatherings." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCDGQm9FkfQR8-CV7c0JMmRJor5c7YwlgWMrfGgGqIsz-bmglJts9TWfVGywB1FyHadZyylWS0Tmfj65zt9k19_S4iy1MydrXkrgMJhww2rgnRVidizsEOe0yJ_21QNBtJ91UD1ulGDtPE3rQniRAWv1gidxh2PMFgnO9nFsSiPM5fOuol6IAkepLqtjIjHWAK9ziODpmUuPym8ge1b6wEL8Lui1ojhUCRp8iPvciszCS0UuXsTbYOMTD8l75A6ggwqxB2afUxPJq3A&quot;);">
+</div>
+<div class="absolute top-4 right-4 bg-glass-white backdrop-blur-md px-3 py-1 rounded-full border border-sand-dark flex items-center gap-1 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-gold-accent"></span>
+<span class="font-label-meta text-label-meta text-primary">כשרות למהדרין</span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-12 h-12 rounded bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: &quot;FILL&quot; 0;">celebration</span>
+</div>
+<h3 class="font-headline-card text-headline-card text-primary">שבת חתן ושמחות</h3>
+</div>
+<p class="font-body-main text-body-main text-on-surface-variant mb-6 flex-grow">
+                            חבילות אירוח מקיפות לשבתות חתן, בר מצווה ושמחות משפחתיות. אולמות תפילה וסעודה פרטיים, תפריט עשיר, וליווי צמוד של צוות ההפקה שלנו ליצירת זיכרונות בלתי נשכחים.
+                        </p>
+<a class="inline-flex items-center gap-2 font-nav-link text-nav-link text-secondary hover:text-gold-accent transition-colors group/link w-max" href="#">
+                            לפרטים נוספים
+                            <span class="material-symbols-outlined text-[18px] transform transition-transform group-hover/link:-translate-x-1" style="font-variation-settings: &quot;FILL&quot; 0;">arrow_back</span>
+</a>
+</div>
+</div>
+<!-- Card 2: Business Events -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-md border border-sand-dark hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col group">
+<div class="h-64 overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A state-of-the-art corporate conference room in a luxury boutique hotel. The setting features a sleek, modern boardroom table, ergonomic seating, and advanced presentation technology. The room has large windows offering bright, natural light, designed with a corporate modern aesthetic using clean lines, deep blue accents, and professional, high-end finishing." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBCrB5oGTA8HmVYudGfgA0xgkmmnUfbVnhyART56LB0KbfUO1L0qxHTUYYRneHJy_OKxpVJHNE3BhYmdvAS-dtmBtiTEZLalplo7_8qDG-cnfo6YXI2k6pU9Ib0DKoS2LRcNB1jmj2wmqmFwyPRlMnFnKtZ91Ous9X_Ehj-GySOo2m9M3KzyGxwC-w2kvTTz8ZfBYo5y3U1FK2C5g0XU0B5fV1YC7ANggY3O-Ra22qPfA0PNhRmLQBM6tcubgt7CPW8mKLhE1ou7xMP&quot;);">
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-12 h-12 rounded bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: &quot;FILL&quot; 0;">business_center</span>
+</div>
+<h3 class="font-headline-card text-headline-card text-primary">כנסים ואירועי חברה</h3>
+</div>
+<p class="font-body-main text-body-main text-on-surface-variant mb-6 flex-grow">
+                            אולמות כנסים מאובזרים בטכנולוגיה מתקדמת, אידיאליים לימי עיון, ישיבות הנהלה ואירועי חברה. אנו מציעים תפריטי כיבוד מותאמים, עמדות קפה עשירות ושירות מוקפד המבטיח את הצלחת האירוע.
+                        </p>
+<a class="inline-flex items-center gap-2 font-nav-link text-nav-link text-secondary hover:text-gold-accent transition-colors group/link w-max" href="#">
+                            צפה באולמות
+                            <span class="material-symbols-outlined text-[18px] transform transition-transform group-hover/link:-translate-x-1" style="font-variation-settings: &quot;FILL&quot; 0;">arrow_back</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Contact Section -->
+<section class="py-section-lg px-gutter bg-surface relative overflow-hidden" id="contact">
+<!-- Decorative background element -->
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-secondary-fixed opacity-20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-24 -left-24 w-96 h-96 bg-tertiary-fixed opacity-20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-4xl mx-auto relative z-10">
+<div class="bg-white rounded-xl shadow-xl border border-sand-dark p-8 md:p-12">
+<div class="text-center mb-10">
+<h2 class="font-headline-section text-headline-section text-primary mb-2">נשמח לעמוד לשירותכם</h2>
+<p class="font-body-main text-body-main text-on-surface-variant">השאירו פרטים ונציג שלנו יחזור אליכם בהקדם להתאמת חופשה או אירוע.</p>
+</div>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="block font-label-meta text-label-meta text-on-surface-variant" for="name">שם מלא</label>
+<input class="w-full bg-surface-bright border border-sand-dark rounded-md px-4 py-3 font-body-main text-body-main text-primary focus:outline-none focus:ring-2 focus:ring-gold-accent focus:border-transparent transition-all" id="name" placeholder="הכנס שם מלא" type="text">
+</div>
+<div class="space-y-2">
+<label class="block font-label-meta text-label-meta text-on-surface-variant" for="phone">מספר טלפון</label>
+<input class="w-full bg-surface-bright border border-sand-dark rounded-md px-4 py-3 font-body-main text-body-main text-primary focus:outline-none focus:ring-2 focus:ring-gold-accent focus:border-transparent transition-all text-right placeholder-right" dir="ltr" id="phone" placeholder="05X-XXXXXXX" type="tel">
+</div>
+</div>
+<div class="space-y-2">
+<label class="block font-label-meta text-label-meta text-on-surface-variant" for="interest">במה אתם מתעניינים?</label>
+<select class="w-full bg-surface-bright border border-sand-dark rounded-md px-4 py-3 font-body-main text-body-main text-primary focus:outline-none focus:ring-2 focus:ring-gold-accent focus:border-transparent transition-all appearance-none" id="interest">
+<option disabled="" selected="" value="">בחרו נושא פנייה</option>
+<option value="vacation">הזמנת חופשה</option>
+<option value="shabbat">שבת חתן</option>
+<option value="events">כנסים ואירועים</option>
+<option value="other">אחר</option>
+</select>
+</div>
+<button class="w-full bg-primary text-on-primary font-nav-link text-nav-link px-8 py-4 rounded-md shadow-md hover:bg-primary-container hover:-translate-y-0.5 transition-all duration-300 flex justify-center items-center gap-2" type="submit">
+                        שלח פנייה
+                        <span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 0;">send</span>
+</button>
+<p class="text-center font-label-meta text-label-meta text-outline mt-4">
+                        הפרטים שלכם שמורים אצלנו ולא יועברו לצד שלישי.
+                    </p>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="text-white py-12" style="background-color: #0F2942;">
+<div class="max-w-container-max mx-auto px-8 flex flex-col items-center justify-center text-center"><div class="mb-8 flex flex-col items-center gap-2">
+<p class="font-body-main text-sm md:text-base text-white/80">© 2024 Miami Hotel Ashdod.</p>
+<p class="font-body-main text-sm md:text-base text-white/80">Glatt Kosher Lemehadrin.</p>
+</div>
+<div class="flex flex-col gap-4 font-nav-link text-sm text-white/70">
+<a class="hover:text-gold-accent transition-colors" href="#">תנאי שימוש</a>
+<a class="hover:text-gold-accent transition-colors" href="#">מדיניות פרטיות</a>
+<a class="hover:text-gold-accent transition-colors" href="#">נגישות</a>
+</div></div>
+</footer>
+<!-- Floating Action Button (WhatsApp) -->
+<a class="fixed bottom-6 left-6 z-50 text-white w-14 h-14 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300 focus:outline-none focus:ring-4 focus:ring-status-emerald/30 group hover:animate-none" href="#" style="background-color: rgb(37, 211, 102); width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 9999px; position: fixed; bottom: 24px; left: 24px; z-index: 50; transition: transform 0.3s;"><i class="fa-brands fa-whatsapp text-white text-[32px]"></i></a>
+<!-- Unified Mobile/Desktop Side Menu Overlay -->
+<div class="fixed inset-0 bg-black/50 z-[60] opacity-0 pointer-events-none transition-opacity duration-300" id="mobile-menu-overlay"></div>
+<div class="fixed top-0 left-0 h-full w-[80%] max-w-xs bg-white z-[70] -translate-x-full transition-transform duration-300 flex flex-col shadow-2xl" id="mobile-nav-drawer">
+<div class="flex justify-between items-center p-6 border-b">
+<button class="hover:bg-surface-container p-2 rounded-full transition-colors" id="mobile-menu-close">
+<span class="material-symbols-outlined text-3xl">close</span>
+</button>
+<a class="" href="{{DATA:SCREEN:SCREEN_70}}">
+<img alt="Miami Hotel" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfln3QJRSEBXnYt6NuUoTj2Mh65AoHHSnkNuaP2pzC9qCJ7hqEDCINqVupupRQRa1UnU4IJ59SNMW7c-7FgxoJtcNG3wGvk-i3NvyNrnyV08LbLCrkBmS72-zulopyR40Fz-9ivXeJTVNHNx5tRfT1pFZbyyD2cdcHlPRU62MOel740wAwOJaiwSzInyoQ4mFrE5SW-BP2e5S4h522_djjniERn5Jqd-uH_Lvhu1W-pbSQhAWb6BM6-d7LBW7AMpjNu3NKKqsIHy_R">
+</a>
+</div>
+<nav class="flex flex-col p-6 gap-6 text-right">
+<a class="text-xl font-bold text-primary hover:text-gold-accent transition-colors" href="{{DATA:SCREEN:SCREEN_54}}">החדרים</a>
+<a class="text-xl text-primary hover:text-gold-accent transition-colors" href="{{DATA:SCREEN:SCREEN_23}}">שבת חתן</a>
+<a class="text-xl text-primary hover:text-gold-accent transition-colors" href="{{DATA:SCREEN:SCREEN_8}}">כנסים ואירועים</a>
+<a class="text-xl text-primary hover:text-gold-accent transition-colors" href="{{DATA:SCREEN:SCREEN_67}}">גלריה</a>
+<a class="text-xl text-primary hover:text-gold-accent transition-colors" href="{{DATA:SCREEN:SCREEN_12}}">אודות</a>
+<a class="text-xl text-primary hover:text-gold-accent transition-colors" href="{{DATA:SCREEN:SCREEN_20}}">צור קשר</a>
+<a class="bg-gold-accent text-white py-3 rounded-lg text-center mt-4 font-bold shadow-md hover:brightness-110 transition-all" href="{{DATA:SCREEN:SCREEN_70}}">הזמינו עכשיו</a>
+</nav>
+</div>
+<script>
+    const trigger = document.getElementById('mobile-menu-trigger'),
+          close = document.getElementById('mobile-menu-close'),
+          drawer = document.getElementById('mobile-nav-drawer'),
+          overlay = document.getElementById('mobile-menu-overlay');
+
+    function toggle(isOpen) {
+        drawer.classList.toggle('-translate-x-full', !isOpen);
+        overlay.classList.toggle('opacity-0', !isOpen);
+        overlay.classList.toggle('pointer-events-none', !isOpen);
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+    }
+
+    trigger.onclick = () => toggle(true);
+    close.onclick = overlay.onclick = () => toggle(false);
+</script>
+
+
+
+
+
+
+
+
+
+
+</body></html>

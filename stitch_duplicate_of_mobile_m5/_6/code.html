@@ -1,0 +1,278 @@
+<!DOCTYPE html><html dir="rtl" lang="he" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700;800&amp;family=Playfair+Display:wght@600;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-bright": "#fbf9f4",
+                    "surface-variant": "#e4e2dd",
+                    "inverse-primary": "#aec9ed",
+                    "surface-container-lowest": "#ffffff",
+                    "glass-white": "rgba(255, 255, 255, 0.95)",
+                    "secondary-fixed-dim": "#a8c9f5",
+                    "gold-accent": "#b48a3d",
+                    "background": "#fbf9f4",
+                    "surface-container": "#f0eee9",
+                    "on-tertiary-container": "#b68c3f",
+                    "on-error": "#ffffff",
+                    "on-secondary-container": "#395a80",
+                    "on-tertiary-fixed": "#271900",
+                    "on-primary": "#ffffff",
+                    "tertiary": "#221500",
+                    "on-surface": "#1b1c19",
+                    "primary": "#00182f",
+                    "on-tertiary-fixed-variant": "#5f4100",
+                    "primary-fixed": "#d2e4ff",
+                    "inverse-on-surface": "#f2f1ec",
+                    "on-primary-fixed-variant": "#2e4867",
+                    "surface-container-highest": "#e4e2dd",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed": "#ffdeaa",
+                    "tertiary-fixed-dim": "#efbf6c",
+                    "surface-container-high": "#eae8e3",
+                    "on-secondary-fixed": "#001d36",
+                    "sand-dark": "#e5dec9",
+                    "primary-fixed-dim": "#aec9ed",
+                    "on-primary-container": "#7a95b7",
+                    "on-error-container": "#93000a",
+                    "tertiary-container": "#3c2800",
+                    "surface": "#fbf9f4",
+                    "on-tertiary": "#ffffff",
+                    "surface-tint": "#466080",
+                    "error": "#ba1a1a",
+                    "outline-variant": "#c3c6ce",
+                    "surface-container-low": "#f5f3ee",
+                    "secondary": "#3f6086",
+                    "on-background": "#1b1c19",
+                    "error-container": "#ffdad6",
+                    "primary-container": "#0f2d4a",
+                    "on-surface-variant": "#43474d",
+                    "on-secondary-fixed-variant": "#26496d",
+                    "status-emerald": "#059669",
+                    "secondary-container": "#b0d1fd",
+                    "outline": "#73777e",
+                    "surface-dim": "#dbdad5",
+                    "secondary-fixed": "#d2e4ff",
+                    "on-primary-fixed": "#001d36",
+                    "inverse-surface": "#30312e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "section-sm": "48px",
+                    "container-max": "1280px",
+                    "base": "4px",
+                    "section-md": "64px",
+                    "section-lg": "80px",
+                    "gutter": "32px"
+            },
+            "fontFamily": {
+                    "nav-link": ["Assistant"],
+                    "label-meta": ["Assistant"],
+                    "headline-card": ["Assistant"],
+                    "display-hero-mobile": ["Assistant"],
+                    "body-main": ["Assistant"],
+                    "headline-section": ["Assistant"],
+                    "display-hero": ["Assistant"],
+                    "accent-serif": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "nav-link": ["15px", {"lineHeight": "normal", "fontWeight": "600"}],
+                    "label-meta": ["12px", {"lineHeight": "1.0", "fontWeight": "500"}],
+                    "headline-card": ["20px", {"lineHeight": "1.4", "fontWeight": "700"}],
+                    "display-hero-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "800"}],
+                    "body-main": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-section": ["30px", {"lineHeight": "1.2", "fontWeight": "800"}],
+                    "display-hero": ["60px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "accent-serif": ["18px", {"lineHeight": "normal", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .gallery-item {
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+        .filter-btn.active {
+            color: #b48a3d;
+            border-bottom: 2px solid #b48a3d;
+        }
+        .clip-slant {
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        }
+    </style>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"></head>
+<body class="bg-surface-bright text-on-surface font-body-main selection:bg-gold-accent selection:text-white" style="margin: 0px; padding: 0px; min-height: 100vh; display: flex; flex-direction: column;">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white">
+<div class="max-w-container-max mx-auto px-8 py-4 flex items-center justify-between"><div class="flex items-center justify-between w-full"><div class="flex-none"><button aria-label="Menu" class="p-2 focus:outline-none"><span class="material-symbols-outlined text-primary text-3xl">menu</span></button></div><div class="flex-none"><a href="{{DATA:SCREEN:SCREEN_51}}"><img alt="Miami Hotel" class="h-12 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkJZrkO9Fe5bWM9YWEDkYeH4HogPnNuqYMEBy9U9wR9KtBCey07pNpB4EN0jxCDf9_MIciYKFzCb8nbseszY2h--izper8v7Vw8xtMCCC0o4anEd3TFv5KDXf-N16S1Jjs-NO959GE4PoAIYW7bJ6weykai79Jy0mwgJFEHbuZkdYXf2h6gu2aQZSwWTkaPDI30cgcH7CJUT5n2pT5u8o27ZXsFfyWfv2R2xENbuvNJHfm963leYZ3V8sWpYaHfhnDcS7vbXeNC3dM"></a></div></div></div>
+</nav><div class="w-full py-1.5 bg-[#0F2942] text-[#FFFFFF] text-center font-label-meta text-[13px] z-40 relative mt-20 border-0 outline-none" dir="rtl">כשרות הרב מחפוד | זמני כניסת שבת - 19:00 | זמני יציאת שבת - 20:00</div>
+<main class="" style="margin-top: 0px;">
+<!-- Hero Header -->
+<header class="relative h-[409px] min-h-[300px] flex items-center justify-center overflow-hidden clip-slant mb-section-md">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A wide cinematic shot of a luxury Mediterranean boutique hotel overlooking the Ashdod coastline at golden hour. The architecture is modern with clean lines, featuring limestone textures and glass balconies. The warm evening sun casts long, soft shadows and a golden glow across the facade, blending corporate modern luxury with coastal tranquility." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeMz9r7q7IFlO1kiG9jATIeqAx8kKvD3y2N85PD72qyqM3uh0VCcVuffGIImOvMncdD_dNRr-jMjS2ipNgILNJrJ5y91XLiljrw_uNsYIvgYelYdfPEP-GyK9gS0TMMxcsvVHOlZQN6MP2avnpz0iKHF7x3ndG3VOLjjQqd43VR2oUPsIP79krE_4gen_7I8fRoeCvIKsjQX0a-M-uhJG3XXAGqCsVa7jAjkxcRM08Yk4qPOBIymSg4oc8Qu_95CrqXrRfkwPvQQl5">
+<div class="absolute inset-0 bg-primary/40"></div>
+<div class="relative z-10 text-center px-4">
+<h1 class="font-display-hero text-display-hero md:text-display-hero text-white mb-4">גלריית תמונות</h1>
+<p class="font-body-main text-body-main text-white/90 max-w-2xl mx-auto">חוויה ויזואלית של יוקרה, מסורת ונוף לים התיכון. גלו את הפינות הקסומות של מלון מיאמי אשדוד.</p>
+</div>
+</header>
+<!-- Gallery Section -->
+<section class="max-w-container-max mx-auto px-8 pb-section-lg">
+<!-- Filters -->
+<div class="flex flex-wrap justify-center gap-4 md:gap-8 mb-section-md border-b border-outline-variant/30 pb-4">
+<button class="filter-btn active font-nav-link text-nav-link text-primary hover:text-gold-accent transition-colors pb-2" onclick="filterGallery('all')">הכל</button>
+<button class="filter-btn font-nav-link text-nav-link text-primary hover:text-gold-accent transition-colors pb-2" onclick="filterGallery('hotel')">המלון והלובי</button>
+<button class="filter-btn font-nav-link text-nav-link text-primary hover:text-gold-accent transition-colors pb-2" onclick="filterGallery('rooms')">חדרים וסוויטות</button>
+<button class="filter-btn font-nav-link text-nav-link text-primary hover:text-gold-accent transition-colors pb-2" onclick="filterGallery('dining')">קולינריה ואירועים</button>
+<button class="filter-btn font-nav-link text-nav-link text-primary hover:text-gold-accent transition-colors pb-2" onclick="filterGallery('sea')">ים וסביבה</button>
+</div>
+<!-- Bento Grid Gallery -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter" id="gallery-grid">
+<!-- Item 1: Large Featured -->
+<div class="gallery-item md:col-span-8 md:row-span-2 relative group overflow-hidden rounded-xl shadow-md" data-category="rooms">
+<img class="w-full h-[600px] object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A luxurious hotel suite with a direct view of the Mediterranean Sea through large floor-to-ceiling windows. The room is styled with sandy neutrals, gold accents, and deep blue textiles. Soft daylight illuminates the elegant furniture and high-end linens, creating a serene and exclusive coastal atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsSfgbEkOB-BW50PYZEen-GE6MFl6z4L2VF0dahUDm-4REnhDK4TtyMlSGcYKRtFZzYA9gYZCyU8dOVlwfYNhd554cAb35mecvrwUvB0W6lENX-GqzEA0x1l5tUegnmN1mXtI_K7jgO99Lj3jwivGtdWTXfj3bcm1DC4XQo2W-G35d4ooH7fx_ipwN-WdlNGtTjzoTURXOoYDifz8PsKhuPZ3FUrYfHkNgGlgWGKvDh531w0la5ltiU6ltE68WcGwOQ6Vb0LUV_bfM">
+<div class="gallery-overlay absolute inset-0 bg-primary/60 opacity-0 flex flex-col justify-end p-8 transition-opacity duration-300">
+<span class="text-gold-accent font-label-meta text-label-meta mb-2 uppercase">חדרים וסוויטות</span>
+<h3 class="text-white font-headline-card text-headline-card">סוויטת פרימיום עם נוף לים</h3>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="gallery-item md:col-span-4 relative group overflow-hidden rounded-xl shadow-md" data-category="hotel">
+<img class="w-full h-[284px] object-cover group-hover:scale-105 transition-transform duration-700" data-alt="The grand lobby of Miami Hotel Ashdod featuring glassmorphic architectural details, polished marble floors, and warm recessed lighting. Sophisticated corporate modern furniture is arranged in welcoming clusters. The space feels bright, airy, and high-end, reflecting a Mediterranean luxury aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCb66JebqUZmwafg9QFiCKrTQUANQIxMQkRnEi8ef_n_Bdc8LTV26ezyGgv8PjL3P2sbJHU_ro2JZ0csGKxheddgNVjgdgVLjb9Rhk0PdeE9fCNsS38-cnbMHdCRdXlB7ceO6BREI6_0kt9jW00zACa1S2qDrAxyKoUvyyBVCrtM1rS1c5893GKJQ4DVbOu6Sx0wOm9Gfgeoy2ZP8F0DFl9524JkfWxDaFQtOpxNSd1D-yWldwrx2LL0WtMGyJI2y-MDRjCeqrKjn6y">
+<div class="gallery-overlay absolute inset-0 bg-primary/60 opacity-0 flex flex-col justify-end p-6 transition-opacity duration-300">
+<span class="text-gold-accent font-label-meta text-label-meta mb-1">המלון והלובי</span>
+<h3 class="text-white font-headline-card text-headline-card">לובי מעוצב</h3>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="gallery-item md:col-span-4 relative group overflow-hidden rounded-xl shadow-md" data-category="dining">
+<img class="w-full h-[284px] object-cover group-hover:scale-105 transition-transform duration-700" data-alt="An elegant dining hall set for a glatt kosher event with white linen tablecloths, gold-trimmed plates, and sparkling crystal glassware. The lighting is soft and atmospheric, highlighting the high-end catering and sophisticated interior design of the banquet hall." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOXmiu40T11liidHqUlgabZpS0TvQ4E4_OnPqR_m_agzrzdqDH30i0Q7cBsGzNY3S2s11Ek5f4ArUnQu_giOWoZ4188uNKPQC2x_lloRONq9CXHtg4_jQQG-F7P5P2KobaxFc1HO7SD_sPH036bmbZKGusaLoNDMrsB_CVO5X3WLw44SWJ3mtYae-q_f7Caen2MqNJFXqmEb_IG_kBsk-BAFPPLQctORBBtjCS2JkuQQavaGRiaXUtykpRDUOYB6AYlHkgYzLURhSl">
+<div class="gallery-overlay absolute inset-0 bg-primary/60 opacity-0 flex flex-col justify-end p-6 transition-opacity duration-300">
+<span class="text-gold-accent font-label-meta text-label-meta mb-1">קולינריה ואירועים</span>
+<h3 class="text-white font-headline-card text-headline-card">מסעדת המלון - כשר למהדרין</h3>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="gallery-item md:col-span-4 relative group overflow-hidden rounded-xl shadow-md" data-category="sea">
+<img class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700" data-alt="The pristine Ashdod beach at dusk, with gentle waves hitting the shore. The sky is a mix of deep blues and soft pinks. In the distance, the lights of the hotel promenade begin to twinkle, capturing a peaceful and spiritual coastal evening." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZI4qihVYIrmtMc_HOwFRaSsWirSpNPFZbeXrAyZIZX52nFRC3ZlmSfWmU3g29J3Ucucyx1nzdQmZH8OXsHltWL3y7Z1-n1wnxzMvjIx1-AuaPcprBEDOBjBzqcoz8jAaMY8hnAYfgK8d-F7Hk4-dMbDnju1ZqCwI1DHSWdb1yzSpmDapMpFklyJZi___EQjoMSd1WZxgvQcLGyQ2Wkyb5hzbp3Qf7NKNMfut8qemMtKHyH1B8sOKRoioEffpSmB7Wklk7YWvenlk8">
+<div class="gallery-overlay absolute inset-0 bg-primary/60 opacity-0 flex flex-col justify-end p-6 transition-opacity duration-300">
+<span class="text-gold-accent font-label-meta text-label-meta mb-1">ים וסביבה</span>
+<h3 class="text-white font-headline-card text-headline-card">חוף אשדוד הסמוך</h3>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="gallery-item md:col-span-4 relative group overflow-hidden rounded-xl shadow-md" data-category="dining">
+<img class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A close-up shot of artisanal kosher desserts served at a business event. The lighting is sharp and professional, showcasing the intricate textures and gold leaf decorations on the sweets, set against a blurred background of a sophisticated lounge." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQkA0PxRCWbZpRjutP2iu66SLsSTDzvJnWGZTUj_RV_iHMXJpaGHxgO313HtPJORmqURq93tsrpP7XFikwZYaiZKgmOyrkvjmYqeEOMpm7nTPbvbvXbs0MZ8iN011EWsUJKuWNmJtE4dU06yHhj4T5xj1vEQ2oHXkUKPyBO2bIedSFXabxevYbx4vKJZ0J2nEXMOxsFmcx2PKd3K2T6fabWTLqGnW9I5pnquz_oyBiVWZ-wykFNE4A-sTf7Urzhv18vk2J1prGvEUN">
+<div class="gallery-overlay absolute inset-0 bg-primary/60 opacity-0 flex flex-col justify-end p-6 transition-opacity duration-300">
+<span class="text-gold-accent font-label-meta text-label-meta mb-1">קולינריה ואירועים</span>
+<h3 class="text-white font-headline-card text-headline-card">אירועי בוטיק וקוקטייל</h3>
+</div>
+</div>
+<!-- Item 6 -->
+<div class="gallery-item md:col-span-4 relative group overflow-hidden rounded-xl shadow-md" data-category="rooms">
+<img class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700" data-alt="An interior detail of a deluxe room featuring high-quality wooden textures, a modern reading lamp with a warm glow, and a window reflecting the blue of the Mediterranean. The aesthetic is clean, professional, and comforting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbsLiJgRv1oKKh2qUfI0sdTZVNFuajGNBpFpvKWMLiD_LHzZYqqQAtpGME5ihUV3YAOeQ_X1yCJFqHd9DuYE8_tUc5AiuyoIax2xIqz8R85uh0dZsdAQjqaJCTKlMxYUGWVIRPcVyrW-SoWIQQiDnYo3D9PDijJEQxqkqFINyeVCuvXKLebvoc2d1hRqMH8LOVH8Xyom5fOsGOJ8bwCHqikyxedNn3HWCaMiio9NPJVFlcJhDLoIn6_ofIVE3xWdkVri4q74gZtVgV">
+<div class="gallery-overlay absolute inset-0 bg-primary/60 opacity-0 flex flex-col justify-end p-6 transition-opacity duration-300">
+<span class="text-gold-accent font-label-meta text-label-meta mb-1">חדרים וסוויטות</span>
+<h3 class="text-white font-headline-card text-headline-card">עיצוב פנים מוקפד</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-primary py-section-lg text-center text-white overflow-hidden relative">
+<div class="absolute top-0 right-0 w-64 h-64 bg-gold-accent/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+<div class="relative z-10 max-w-2xl mx-auto px-8">
+<h2 class="font-headline-section text-headline-section mb-6">רוצים לראות את הכל מקרוב?</h2>
+<p class="font-body-main text-body-main mb-8 opacity-90">הזמינו עכשיו את החופשה הבאה שלכם במלון מיאמי אשדוד ותיהנו מאירוח יוקרתי מול הים.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-gold-accent text-white px-8 py-3 rounded-lg font-nav-link text-nav-link hover:shadow-xl transition-all hover:-translate-y-1">להזמנת חדר</button>
+<button class="border border-white/30 text-white px-8 py-3 rounded-lg font-nav-link text-nav-link hover:bg-white/10 transition-all">צרו קשר לפרטים נוספים</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0F2942] text-white w-full py-12 mb-0">
+<div class="max-w-container-max mx-auto px-8 flex flex-col items-center justify-center text-center gap-8">
+<div class="font-body-main text-base leading-relaxed">
+      © 2024 Miami Hotel Ashdod.<br>
+      Glatt Kosher Lemehadrin.
+    </div>
+<div class="flex flex-col gap-3">
+<a class="text-white/80 hover:text-white transition-colors text-sm" href="#">תנאי שימוש</a>
+<a class="text-white/80 hover:text-white transition-colors text-sm" href="#">מדיניות פרטיות</a>
+<a class="text-white/80 hover:text-white transition-colors text-sm" href="#">נגישות</a>
+</div>
+</div>
+</footer>
+<!-- WhatsApp FAB -->
+<a class="fixed bottom-8 left-8 z-[100] bg-[#0DB074] text-white p-4 rounded-full flex items-center justify-center w-16 h-16" href="https://wa.me/972000000000"><i class="fa-brands fa-whatsapp text-3xl"></i></a>
+<script>
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            // Update buttons
+            buttons.forEach(btn => {
+                btn.classList.remove('active');
+                if(btn.getAttribute('onclick').includes(category)) {
+                    btn.classList.add('active');
+                }
+            });
+
+            // Filter items
+            items.forEach(item => {
+                if (category === 'all' || item.getAttribute('data-category') === category) {
+                    item.style.display = 'block';
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                        item.style.transform = 'scale(1)';
+                    }, 10);
+                } else {
+                    item.style.opacity = '0';
+                    item.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        item.style.display = 'none';
+                    }, 300);
+                }
+            });
+        }
+
+        // Simple scroll reveal for nav
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2');
+                nav.classList.remove('py-4');
+            } else {
+                nav.classList.add('py-4');
+                nav.classList.remove('py-2');
+            }
+        });
+    </script>
+
+
+
+
+
+
+</body></html>

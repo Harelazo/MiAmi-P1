@@ -1,0 +1,375 @@
+<!DOCTYPE html><html dir="rtl" lang="he" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>צור קשר - מלון מיאמי אשדוד</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "secondary-fixed": "#d2e4ff",
+                "surface-dim": "#dbdad5",
+                "outline": "#73777e",
+                "inverse-surface": "#30312e",
+                "on-primary-fixed": "#001d36",
+                "surface-container-low": "#f5f3ee",
+                "outline-variant": "#c3c6ce",
+                "secondary-container": "#b0d1fd",
+                "status-emerald": "#059669",
+                "on-surface-variant": "#43474d",
+                "on-secondary-fixed-variant": "#26496d",
+                "primary-container": "#0f2d4a",
+                "error-container": "#ffdad6",
+                "on-background": "#1b1c19",
+                "secondary": "#3f6086",
+                "surface-tint": "#466080",
+                "on-tertiary": "#ffffff",
+                "error": "#ba1a1a",
+                "tertiary-fixed-dim": "#efbf6c",
+                "surface-container-high": "#eae8e3",
+                "tertiary-container": "#3c2800",
+                "surface": "#fbf9f4",
+                "on-error-container": "#93000a",
+                "sand-dark": "#e5dec9",
+                "primary-fixed-dim": "#aec9ed",
+                "on-primary-container": "#7a95b7",
+                "on-secondary-fixed": "#001d36",
+                "on-primary-fixed-variant": "#2e4867",
+                "inverse-on-surface": "#f2f1ec",
+                "tertiary-fixed": "#ffdeaa",
+                "on-secondary": "#ffffff",
+                "surface-container-highest": "#e4e2dd",
+                "on-tertiary-fixed": "#271900",
+                "on-secondary-container": "#395a80",
+                "primary-fixed": "#d2e4ff",
+                "primary": "#00182f",
+                "on-tertiary-fixed-variant": "#5f4100",
+                "on-surface": "#1b1c19",
+                "tertiary": "#221500",
+                "on-primary": "#ffffff",
+                "background": "#fbf9f4",
+                "on-error": "#ffffff",
+                "on-tertiary-container": "#b68c3f",
+                "surface-container": "#f0eee9",
+                "surface-variant": "#e4e2dd",
+                "surface-bright": "#fbf9f4",
+                "gold-accent": "#b48a3d",
+                "secondary-fixed-dim": "#a8c9f5",
+                "glass-white": "rgba(255, 255, 255, 0.95)",
+                "surface-container-lowest": "#ffffff",
+                "inverse-primary": "#aec9ed"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "section-md": "64px",
+                "section-lg": "80px",
+                "section-sm": "48px",
+                "container-max": "1280px",
+                "base": "4px",
+                "gutter": "32px"
+        },
+        "fontFamily": {
+                "headline-section": [
+                        "Assistant"
+                ],
+                "display-hero": [
+                        "Assistant"
+                ],
+                "accent-serif": [
+                        "Playfair Display"
+                ],
+                "display-hero-mobile": [
+                        "Assistant"
+                ],
+                "body-main": [
+                        "Assistant"
+                ],
+                "headline-card": [
+                        "Assistant"
+                ],
+                "nav-link": [
+                        "Assistant"
+                ],
+                "label-meta": [
+                        "Assistant"
+                ]
+        },
+        "fontSize": {
+                "headline-section": [
+                        "30px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "800"
+                        }
+                ],
+                "display-hero": [
+                        "60px",
+                        {
+                                "lineHeight": "1.1",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "800"
+                        }
+                ],
+                "accent-serif": [
+                        "18px",
+                        {
+                                "lineHeight": "normal",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "display-hero-mobile": [
+                        "36px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "800"
+                        }
+                ],
+                "body-main": [
+                        "16px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-card": [
+                        "20px",
+                        {
+                                "lineHeight": "1.4",
+                                "fontWeight": "700"
+                        }
+                ],
+                "nav-link": [
+                        "15px",
+                        {
+                                "lineHeight": "normal",
+                                "fontWeight": "600"
+                        }
+                ],
+                "label-meta": [
+                        "12px",
+                        {
+                                "lineHeight": "1.0",
+                                "fontWeight": "500"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .clip-slant {
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-main selection:bg-gold-accent selection:text-white">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white shadow-md">
+<div class="flex justify-between items-center px-8 py-4 max-w-container-max mx-auto">
+<div class="flex items-center">
+<a class="block" href="/"><img alt="Miami Hotel Logo" class="h-12 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsM68pVobFnpLI_HcC80cRSl8Tgu2ryGjIOPwXQsJmdkn6zWIqHXzGd4Zrh6WJzwKCYZFmPC8Jvdd4hF3nymP1Ufm349jFmQL7YphK8qB6CrSnp91iyKx7k_3XxI_gq4z54So7Ps9pPQwjp64-FZVrl636q3fyPcum8OR2rux7aOTUwC8fJ1lyt5-A3lZiYTaRJ4mgNBA3myrWz6yLBpNplsx-0VGSSTEEK5VdkrZjZqgo8JVQzbMkXg0uvm7JomwquwyVbaOdUYGu"></a>
+</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-nav-link text-nav-link text-primary hover:text-gold-accent transition-colors" href="#rooms">החדרים</a>
+<a class="font-nav-link text-nav-link text-primary hover:text-gold-accent transition-colors" href="#shabbat">שבת חתן</a>
+<a class="font-nav-link text-nav-link text-primary hover:text-gold-accent transition-colors" href="#events">כנסים ואירועים</a>
+<a class="font-nav-link text-nav-link text-primary hover:text-gold-accent transition-colors" href="#gallery">גלריה</a>
+<a class="font-nav-link text-nav-link text-primary hover:text-gold-accent transition-colors" href="#about">אודות</a>
+<a class="font-nav-link text-nav-link text-gold-accent font-bold border-b-2 border-gold-accent pb-1" href="#contact">צור קשר</a></nav>
+<button class="bg-gold-accent text-white px-6 py-2 rounded-lg font-nav-link hover:-translate-y-0.5 transition-transform shadow-md">הזמינו עכשיו</button>
+</div>
+</header>
+<!-- Announcement Bar -->
+<div class="bg-primary-container text-white py-2 px-4 text-center font-body-main text-xs md:text-sm z-40 relative border-t border-white/10 mt-[80px]" dir="rtl">
+    כשרות הרב מחפוד | זמני כניסת שבת- 19:00 | זמני יציאת שבת- 20:00
+</div>
+<main class="pt-0 pb-section-lg">
+<!-- Hero Section -->
+<section class="relative h-[409px] min-h-[300px] flex items-center justify-center overflow-hidden mb-section-md">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover brightness-50" data-alt="A wide panoramic view of a luxury coastal boutique hotel entrance at sunset, with golden hour light reflecting off large glass windows. The architecture is modern with Mediterranean influences, featuring white stone and palm trees swaying in a gentle breeze. The sky is a gradient of deep orange and soft blue, echoing a refined, high-end resort atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqLPs0mMmHZmuXzNKArTqa_lfXv9fA3k-2USx-OHa2FMRVXbMdDRS00VeYeIDuR0pJF-G9K-EpuTeCT3FlI73dLD7KSMWVQdZ7Pd3cDVgkiY2RRuXYLhTlVF5OgFl19hRKLnIJrTwY0eIkWaxcslW1lqsA4tIn4MB2OOZSLBk9TpwzcdU3huh_W92E0WtN_8JJiA8V_i26ywrMo2YWSql30lu6c0mXsXPMUE4pXTxw_eCpYkblVQq5sLSv4q5jaZyFIzd2VZPf1W1j">
+</div>
+<div class="relative z-10 text-center px-4">
+<h1 class="font-display-hero text-display-hero text-white mb-4">צרו קשר</h1>
+<p class="font-body-main text-white/90 max-w-2xl mx-auto text-xl">אנחנו כאן כדי להפוך את השהות שלכם לחוויה בלתי נשכחת. צרו קשר לכל שאלה או הזמנה.</p>
+</div>
+</section>
+<div class="max-w-container-max mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Right Side: Contact Info Card (Blue) -->
+<div class="lg:col-span-5 order-1 lg:order-2 space-y-6">
+<div class="bg-primary text-on-primary rounded-xl p-8 shadow-xl relative overflow-hidden h-full flex flex-col">
+<div class="absolute top-0 right-0 w-32 h-32 bg-gold-accent/10 rounded-bl-full"></div>
+<h2 class="font-accent-serif text-3xl mb-8 text-gold-accent font-bold">פרטי התקשרות</h2>
+<div class="space-y-8 flex-grow">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-gold-accent">phone_in_talk</span>
+</div>
+<div>
+<p class="font-label-meta text-gold-accent uppercase mb-1">טלפון</p>
+<p class="font-headline-card text-headline-card">08-1234567</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-gold-accent"><i class="fa-brands fa-whatsapp text-[#25D366] text-2xl"></i></span>
+</div>
+<div>
+<p class="font-label-meta text-gold-accent uppercase mb-1">WhatsApp</p>
+<p class="font-headline-card text-headline-card">054-7654321</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-gold-accent">mail</span>
+</div>
+<div>
+<p class="font-label-meta text-gold-accent uppercase mb-1">דואר אלקטרוני</p>
+<p class="font-headline-card text-headline-card">info@miami-ashdod.co.il</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-gold-accent">location_on</span>
+</div>
+<div>
+<p class="font-label-meta text-gold-accent uppercase mb-1">כתובת</p>
+<p class="font-headline-card text-headline-card">רחוב הטיילת 1, אשדוד</p>
+</div>
+</div>
+</div>
+<!-- Map Placeholder -->
+<div class="mt-8 rounded-lg overflow-hidden border border-white/10 grayscale hover:grayscale-0 transition-all duration-500 h-64">
+<img class="w-full h-full object-cover" data-alt="A stylized, minimalist map visualization of the Ashdod coastline, highlighting the Mediterranean Sea and the beachfront area. The map uses a sophisticated dark blue and gold color scheme to match the hotel branding, with clean typography and subtle vector lines indicating major roads and landmarks near the beach." data-location="Ashdod, Israel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASx9KkbLfPZsDyQbNV-zr8gQktnwkRy2Rgx4unEDDSOZ3gKGh3OvUBkdgmukWskBP6ErCYV_nOTjJ21R-lKuW6uvLYyX_tgGBCbkTNAX1ztWD6L9p8RyfFkN4BCTO_lWbb0QrAekxYeRgEMmFsMW5KHn1uR3fJwyZQodM5LWtJLnAEyK2bT3URlEYFmghxSBxrRn-JhxCxWIo4WE1-6LE7S5XVspAmVZJLXVc7w42n0T02MHYGPZCEIFbEM1sj3VsylKiqH9esZ0Ld" style="transform: scale(1); transition: transform 1s ease-in;">
+</div>
+</div>
+</div>
+<!-- Left Side: Contact Form -->
+<div class="lg:col-span-7 order-2 lg:order-1">
+<div class="bg-white rounded-xl p-8 md:p-12 shadow-md border border-sand-dark h-full">
+<div class="mb-8">
+<h2 class="font-accent-serif text-3xl text-primary mb-2 font-bold">שלחו לנו הודעה</h2>
+<p class="text-on-surface-variant font-body-main">נשמח לעמוד לרשותכם בכל פנייה. מלאו את הפרטים ונחזור אליכם בהקדם.</p>
+</div>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-meta text-on-surface-variant" for="full_name">שם מלא</label>
+<input class="w-full px-4 py-3 rounded-lg border border-sand-dark bg-white focus:ring-2 focus:ring-gold-accent focus:border-gold-accent outline-none transition-all" id="full_name" placeholder="ישראל ישראלי" type="text">
+</div>
+<div class="space-y-2">
+<label class="font-label-meta text-on-surface-variant" for="phone">טלפון ליצירת קשר</label>
+<input class="w-full px-4 py-3 rounded-lg border border-sand-dark bg-white focus:ring-2 focus:ring-gold-accent focus:border-gold-accent outline-none transition-all" id="phone" placeholder="050-0000000" type="tel">
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-meta text-on-surface-variant" for="event_type">סוג האירוע / פנייה</label>
+<select class="w-full px-4 py-3 rounded-lg border border-sand-dark bg-white focus:ring-2 focus:ring-gold-accent focus:border-gold-accent outline-none transition-all appearance-none" id="event_type">
+<option>חופשה משפחתית</option>
+<option>שבת חתן</option>
+<option>אירוע עסקי</option>
+<option>אחר</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-label-meta text-on-surface-variant" for="guests">מספר אורחים</label>
+<input class="w-full px-4 py-3 rounded-lg border border-sand-dark bg-white focus:ring-2 focus:ring-gold-accent focus:border-gold-accent outline-none transition-all" id="guests" placeholder="1" type="number">
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-meta text-on-surface-variant" for="message">הודעה</label>
+<textarea class="w-full px-4 py-3 rounded-lg border border-sand-dark bg-white focus:ring-2 focus:ring-gold-accent focus:border-gold-accent outline-none transition-all" id="message" placeholder="נשמח לשמוע פרטים נוספים..." rows="5"></textarea>
+</div>
+<div class="flex items-center gap-2 mb-6">
+<input class="rounded text-gold-accent focus:ring-gold-accent h-4 w-4" id="consent" type="checkbox">
+<label class="text-sm text-on-surface-variant" for="consent">אני מאשר קבלת הצעות ועדכונים מהמלון</label>
+</div>
+<button class="w-full bg-gold-accent text-white font-bold py-4 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300" type="submit">
+                                שליחת הודעה
+                            </button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0F2942] text-white w-full">
+<div class="max-w-container-max mx-auto px-6 py-12 flex flex-col items-center justify-center text-center">
+<div class="mb-6">
+<p class="font-body-main text-lg leading-relaxed">
+        © 2024 Miami Hotel Ashdod. <br>
+        Glatt Kosher Lemehadrin.
+      </p>
+</div>
+<div class="flex flex-col gap-3 font-body-main text-sm">
+<a class="hover:text-gold-accent transition-colors" href="#">תנאי שימוש</a>
+<a class="hover:text-gold-accent transition-colors" href="#">מדיניות פרטיות</a>
+<a class="hover:text-gold-accent transition-colors" href="#">נגישות</a>
+</div>
+</div>
+</footer>
+<!-- FAB: WhatsApp -->
+<a aria-label="WhatsApp" class="fixed bottom-8 left-8 z-[100] text-white w-14 h-14 rounded-full flex items-center justify-center bg-[#0DB074] transition-transform hover:scale-110" href="https://wa.me/9720000000"><i class="fa-brands fa-whatsapp text-3xl"></i></a>
+<script>
+        // Form Interaction Logic
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const btn = e.target.querySelector('button');
+            const originalText = btn.innerText;
+            btn.innerText = 'שולח...';
+            btn.classList.add('opacity-50', 'pointer-events-none');
+            
+            setTimeout(() => {
+                btn.innerText = 'ההודעה נשלחה בהצלחה!';
+                btn.classList.remove('bg-gold-accent');
+                btn.classList.add('bg-status-emerald');
+                e.target.reset();
+                
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                    btn.classList.remove('bg-status-emerald', 'opacity-50', 'pointer-events-none');
+                    btn.classList.add('bg-gold-accent');
+                }, 3000);
+            }, 1500);
+        });
+
+        // Hover effect for map
+        const mapImg = document.querySelector('[data-location]');
+        if(mapImg) {
+            mapImg.addEventListener('mouseenter', () => {
+                mapImg.style.transform = 'scale(1.1)';
+                mapImg.style.transition = 'transform 8s ease-out';
+            });
+            mapImg.addEventListener('mouseleave', () => {
+                mapImg.style.transform = 'scale(1)';
+                mapImg.style.transition = 'transform 1s ease-in';
+            });
+        }
+    </script>
+
+
+</body></html>
