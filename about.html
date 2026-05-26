@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>אודות - מלון מיאמי אשדוד</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config" src="js/tailwind-config.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <link rel="stylesheet" href="css/global.css"/>
+</head>
+<body class="bg-surface text-on-surface font-body-main text-body-main antialiased selection:bg-gold-accent selection:text-white">
+
+<header class="site-header">
+  <div class="header-inner">
+    <button id="mobile-menu-trigger" class="nav-toggle" aria-label="פתח תפריט" aria-expanded="false" type="button">
+      <span class="material-symbols-outlined text-4xl">menu</span>
+    </button>
+
+    <a href="index.html" class="block hover:opacity-80 transition-opacity" aria-label="לוגו מלון מיאמי אשדוד">
+      <img alt="Miami Hotel Ashdod Logo" class="h-12 w-auto object-contain"
+           src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfln3QJRSEBXnYt6NuUoTj2Mh65AoHHSnkNuaP2pzC9qCJ7hqEDCINqVupupRQRa1UnU4IJ59SNMW7c-7FgxoJtcNG3wGvk-i3NvyNrnyV08LbLCrkBmS72-zulopyR40Fz-9ivXeJTVNHNx5tRfT1pFZbyyD2cdcHlPRU62MOel740wAwOJaiwSzInyoQ4mFrE5SW-BP2e5S4h522_djjniERn5Jqd-uH_Lvhu1W-pbSQhAWb6BM6-d7LBW7AMpjNu3NKKqsIHy_R"/>
+    </a>
+
+    <nav class="nav-desktop" aria-label="תפריט ראשי">
+      <a href="index.html">דף הבית</a>
+      <a href="rooms.html">חדרים</a>
+      <a href="shabbat.html">שבת חתן</a>
+      <a href="events.html">כנסים ואירועים</a>
+      <a href="gallery.html">גלריה</a>
+      <a href="about.html" class="is-active" aria-current="page">אודות</a>
+      <a href="contact.html">צור קשר</a>
+    </nav>
+
+    <a href="contact.html" class="header-cta">הזמינו עכשיו</a>
+  </div>
+</header>
+
+<div class="announcement-bar">
+  <p>כשרות הרב מחפוד | זמני כניסת שבת: 19:00 | זמני יציאת שבת: 20:00</p>
+</div>
+
+<div id="mobile-menu-overlay" class="mobile-nav-overlay"></div>
+<aside id="mobile-nav-drawer" class="mobile-nav-drawer" dir="rtl" aria-hidden="true">
+  <div class="mobile-nav-drawer__head">
+    <button id="mobile-menu-close" class="mobile-nav-drawer__close" aria-label="סגור תפריט" type="button">
+      <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+    <a href="index.html">
+      <img alt="Miami Hotel Ashdod Logo" class="h-8 w-auto object-contain"
+           src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfln3QJRSEBXnYt6NuUoTj2Mh65AoHHSnkNuaP2pzC9qCJ7hqEDCINqVupupRQRa1UnU4IJ59SNMW7c-7FgxoJtcNG3wGvk-i3NvyNrnyV08LbLCrkBmS72-zulopyR40Fz-9ivXeJTVNHNx5tRfT1pFZbyyD2cdcHlPRU62MOel740wAwOJaiwSzInyoQ4mFrE5SW-BP2e5S4h522_djjniERn5Jqd-uH_Lvhu1W-pbSQhAWb6BM6-d7LBW7AMpjNu3NKKqsIHy_R"/>
+    </a>
+  </div>
+
+  <nav class="mobile-nav-drawer__links" aria-label="תפריט מובייל">
+    <a href="index.html">דף הבית</a>
+    <a href="rooms.html">חדרים</a>
+    <a href="shabbat.html">שבת חתן</a>
+    <a href="events.html">כנסים ואירועים</a>
+    <a href="gallery.html">גלריה</a>
+    <a href="about.html" class="is-active" aria-current="page">אודות</a>
+    <a href="contact.html">צור קשר</a>
+    <a href="contact.html" class="mobile-nav-drawer__cta">הזמינו עכשיו</a>
+  </nav>
+</aside>
+
+<main class="flex-grow">
+<!-- Heritage Section -->
+<section class="py-section-lg px-gutter max-w-container-max mx-auto">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div class="order-2 md:order-1 space-y-6">
+<span class="text-gold-accent font-accent-serif text-accent-serif tracking-widest uppercase">מאז ולתמיד</span>
+<h2 class="font-headline-section text-headline-section text-primary">מורשת של הכנסת אורחים</h2>
+<p class="font-body-main text-on-surface-variant leading-relaxed">
+                        במלון מיאמי, אנו מאמינים שאירוח אמיתי מתחיל מהלב. מזה שנים רבות שאנו פותחים את דלתותינו למשפחות, זוגות ואורחים עסקיים המחפשים מקום המשלב את הנוחות המודרנית ביותר עם אווירה חמה וביתית. 
+                        <br><br>
+                        ההקפדה על הפרטים הקטנים, מהעיצוב המוקפד של החדרים ועד לרמת השירות האישית, היא זו שהופכת כל שהות אצלנו לזיכרון בלתי נשכח. אנו גאים להיות המלון המועדף על אלו המעריכים איכות ללא פשרות לצד שמירה על ערכי המסורת.
+                    </p>
+</div>
+<div class="order-1 md:order-2 grid grid-cols-2 gap-4">
+<div class="rounded-xl overflow-hidden shadow-lg h-80">
+<img class="w-full h-full object-cover" data-alt="An elegant exterior shot of a modern white boutique hotel building against a clear blue Mediterranean sky. The architecture features clean lines and glass balconies that reflect the golden afternoon sun. Lush green coastal vegetation frames the base of the structure, creating a fresh and welcoming atmosphere in a bright light-mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAieycapa-6jL08enSatd_kuaNyL9ZqvhgUoEj4dWYSISX1gi3exMGOIxg4sYSaWjv2InPIV3w3vJ2lgCSgqHeR-rqnhxj6KeXqKeiln_mpvq7YyDALG8MVaOvzUvXPJ9v-0lABo6K1eeCwmH0KhO5TZf14W9YoWKqjc2Kwq1gJfXmn12z_G6Kw4gPfstt9qzkh6pqzmCgJYM0eZqfjJLcwmC_SOU-BQoJOWRMqOCmQknHOLDwEuUknjZoV3sIKMAtnHJFnyQgD5KR6">
+</div>
+<div class="rounded-xl overflow-hidden shadow-lg h-80 mt-8">
+<img class="w-full h-full object-cover" data-alt="A sophisticated hotel dining room set for a festive meal with white linen tablecloths, gleaming silverware, and elegant floral centerpieces. Large windows in the background reveal a glimpse of the coastal horizon, filling the space with soft, natural light. The interior design combines warm wood accents with navy blue upholstery, embodying a modern traditionalist boutique style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7gWJxbm4Nk2HZXW2DXuErRlbi1IK7IiTs24AY45DzX-aE_gvTKlGHzN7Mkpgy3Gxfw3VJnreWJwZBZSjW8MzSKaLs7vmNvIdbFkx9wU05y8kJr4prt-QNpxjLes0xxYsP6ZvXzepTKBbOIy8OKtVoPPqB1kwq0xo02v4JId-W11x88nKA30qrbu3klXPr3H-bM15JdEEUdPtDf1qgKsdK2t3sSUleYOSYn4ZXGaiG_LtYtmPUwNAuEWtc2w6XmMmO44Yi72dBWlPp">
+</div>
+</div>
+</div>
+</section>
+<!-- Values Grid -->
+<section class="py-section-md bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Value 1 -->
+<div class="bg-white p-8 rounded-xl shadow-md border border-sand-dark text-center hover:scale-105 transition-transform duration-300">
+<div class="w-16 h-16 bg-primary/5 rounded-full flex items-center justify-center mx-auto mb-6 text-gold-accent">
+<span class="material-symbols-outlined text-4xl">favorite</span>
+</div>
+<h3 class="font-headline-card text-headline-card text-primary mb-4">שירות מכל הלב</h3>
+<p class="font-body-main text-on-surface-variant">הצוות שלנו כאן כדי להעניק לכם יחס אישי וחם, מרגע ההזמנה ועד רגע העזיבה.</p>
+</div>
+<!-- Value 2 -->
+<div class="bg-white p-8 rounded-xl shadow-md border border-sand-dark text-center hover:scale-105 transition-transform duration-300">
+<div class="w-16 h-16 bg-primary/5 rounded-full flex items-center justify-center mx-auto mb-6 text-gold-accent">
+<span class="material-symbols-outlined text-4xl">verified</span>
+</div>
+<h3 class="font-headline-card text-headline-card text-primary mb-4">מצוינות ללא פשרות</h3>
+<p class="font-body-main text-on-surface-variant">מתחייבים לסטנדרטים הגבוהים ביותר של ניקיון, קולינריה ותחזוקה בכל פינה במלון.</p>
+</div>
+<!-- Value 3 -->
+<div class="bg-white p-8 rounded-xl shadow-md border border-sand-dark text-center hover:scale-105 transition-transform duration-300">
+<div class="w-16 h-16 bg-primary/5 rounded-full flex items-center justify-center mx-auto mb-6 text-gold-accent">
+<span class="material-symbols-outlined text-4xl">auto_awesome</span>
+</div>
+<h3 class="font-headline-card text-headline-card text-primary mb-4">שימור המסורת</h3>
+<p class="font-body-main text-on-surface-variant">בית חם לשומרי מסורת, עם כשרות מהודרת ואווירת שבת קדושה ושלווה.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Location Section -->
+<section class="py-section-lg px-gutter max-w-container-max mx-auto overflow-hidden">
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="w-full md:w-1/2 relative">
+<div class="absolute -top-4 -right-4 w-full h-full border-2 border-gold-accent rounded-xl -z-10"></div>
+<img class="w-full h-[450px] object-cover rounded-xl shadow-xl" data-alt="A breathtaking view from a hotel balcony overlooking the golden sands and turquoise waters of Ashdod beach at sunset. The sky is painted in soft oranges and pinks, creating a romantic and peaceful coastal mood. The foreground shows a stylish balcony railing and a corner of a luxury lounge chair, emphasizing the hotel's prime beachfront location." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgZc-mTk1qDZ58QvgNRnB5ikOxoonlJfd5D6VqkBgA8cvSTIYD-cufAeiSR_oFxwTGE3B61LYdKbhsuiCE1nd5cQAVZMKQC0ffY_KUfwTwaln7TG-uL_eQaJBhIXVi4J3bkCBamV_wWdeIDzxuON3LDhM5H-n1UFKJ4NI4cR_mmVBB62Z4Xc0Wdkx-DrfIJKgdX0yB5yszdk64HW_MS5Zl6nTKrzrosxVoWlu6QpWPjvKfeLR_LVjp1iplMsT1nqeXfqAAmRYuWv2x">
+</div>
+<div class="w-full md:w-1/2 space-y-6">
+<h2 class="font-headline-section text-headline-section text-primary">פעימות הלב של הים</h2>
+<p class="font-body-main text-on-surface-variant text-lg leading-relaxed">
+                        מלון מיאמי ממוקם בנקודה האסטרטגית ביותר באשדוד – על קו המים הראשון. השילוב בין הבריזה המרעננת של הים לבין הקרבה לכל מוקדי העניין בעיר הופכת אותנו לבחירה האידיאלית.
+                    </p>
+<ul class="space-y-4">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-gold-accent">check_circle</span>
+<span class="font-body-main">מרחק הליכה קצר מחוף הים המוסדר</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-gold-accent">check_circle</span>
+<span class="font-body-main">נוף פנורמי לים ממרבית החדרים</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-gold-accent">check_circle</span>
+<span class="font-body-main">גישה נוחה למרכזי קניות ובתי כנסת</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Kosher Section -->
+<section class="py-section-lg bg-primary text-on-primary">
+<div class="max-w-container-max mx-auto px-gutter text-center">
+<h2 class="font-headline-section text-headline-section mb-12">כשרות למהדרין - שקט נפשי מלא</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="flex flex-col items-center">
+<div class="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-white text-5xl">church</span>
+</div>
+<h4 class="font-headline-card text-headline-card mb-2">בית כנסת במלון</h4>
+<p class="opacity-80">מניין קבוע ותפילות באווירה מרוממת ונוחה בתוך מתחם המלון.</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-white text-5xl">elevator</span>
+</div>
+<h4 class="font-headline-card text-headline-card mb-2">מעלית שבת</h4>
+<p class="opacity-80">מעליות מותאמות הפועלות לאורך כל השבת לנוחיותכם המלאה.</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-white text-5xl">restaurant</span>
+</div>
+<h4 class="font-headline-card text-headline-card mb-2">אוכל כשר למהדרין</h4>
+<p class="opacity-80">מטבח משובח תחת השגחת הרב מחפוד, המבטיח קולינריה ברמה גבוהה וכשרות ללא פשרות.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__copy">
+      <p>© 2024 Miami Hotel Ashdod.</p>
+      <p>Glatt Kosher Lemehadrin.</p>
+    </div>
+    <div class="site-footer__links">
+      <a href="#">תנאי שימוש</a>
+      <a href="#">מדיניות פרטיות</a>
+      <a href="#">נגישות</a>
+    </div>
+  </div>
+</footer>
+
+<a class="whatsapp-fab" href="https://wa.me/9720000000" aria-label="WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script src="js/nav.js"></script>
+</body>
+</html>
+
