@@ -15,58 +15,8 @@
 </head>
 <body class="bg-surface text-on-surface font-body-main text-body-main antialiased selection:bg-gold-accent selection:text-white">
 
-<header class="site-header">
-  <div class="header-inner">
-    <button id="mobile-menu-trigger" class="nav-toggle" aria-label="פתח תפריט" aria-expanded="false" type="button">
-      <span class="material-symbols-outlined text-4xl">menu</span>
-    </button>
-
-    <a href="index.html" class="block hover:opacity-80 transition-opacity" aria-label="לוגו מלון מיאמי אשדוד">
-      <img alt="Miami Hotel Ashdod Logo" class="h-12 w-auto object-contain"
-           src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfln3QJRSEBXnYt6NuUoTj2Mh65AoHHSnkNuaP2pzC9qCJ7hqEDCINqVupupRQRa1UnU4IJ59SNMW7c-7FgxoJtcNG3wGvk-i3NvyNrnyV08LbLCrkBmS72-zulopyR40Fz-9ivXeJTVNHNx5tRfT1pFZbyyD2cdcHlPRU62MOel740wAwOJaiwSzInyoQ4mFrE5SW-BP2e5S4h522_djjniERn5Jqd-uH_Lvhu1W-pbSQhAWb6BM6-d7LBW7AMpjNu3NKKqsIHy_R"/>
-    </a>
-
-    <nav class="nav-desktop" aria-label="תפריט ראשי">
-      <a href="index.html">דף הבית</a>
-      <a href="rooms.html">חדרים</a>
-      <a href="shabbat.html">שבת חתן</a>
-      <a href="events.html">כנסים ואירועים</a>
-      <a href="gallery.html">גלריה</a>
-      <a href="about.html" class="is-active" aria-current="page">אודות</a>
-      <a href="contact.html">צור קשר</a>
-    </nav>
-
-    <a href="contact.html" class="header-cta">הזמינו עכשיו</a>
-  </div>
-</header>
-
-<div class="announcement-bar">
-  <p>כשרות הרב מחפוד | זמני כניסת שבת: 19:00 | זמני יציאת שבת: 20:00</p>
-</div>
-
-<div id="mobile-menu-overlay" class="mobile-nav-overlay"></div>
-<aside id="mobile-nav-drawer" class="mobile-nav-drawer" dir="rtl" aria-hidden="true">
-  <div class="mobile-nav-drawer__head">
-    <button id="mobile-menu-close" class="mobile-nav-drawer__close" aria-label="סגור תפריט" type="button">
-      <span class="material-symbols-outlined text-3xl">close</span>
-    </button>
-    <a href="index.html">
-      <img alt="Miami Hotel Ashdod Logo" class="h-8 w-auto object-contain"
-           src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfln3QJRSEBXnYt6NuUoTj2Mh65AoHHSnkNuaP2pzC9qCJ7hqEDCINqVupupRQRa1UnU4IJ59SNMW7c-7FgxoJtcNG3wGvk-i3NvyNrnyV08LbLCrkBmS72-zulopyR40Fz-9ivXeJTVNHNx5tRfT1pFZbyyD2cdcHlPRU62MOel740wAwOJaiwSzInyoQ4mFrE5SW-BP2e5S4h522_djjniERn5Jqd-uH_Lvhu1W-pbSQhAWb6BM6-d7LBW7AMpjNu3NKKqsIHy_R"/>
-    </a>
-  </div>
-
-  <nav class="mobile-nav-drawer__links" aria-label="תפריט מובייל">
-    <a href="index.html">דף הבית</a>
-    <a href="rooms.html">חדרים</a>
-    <a href="shabbat.html">שבת חתן</a>
-    <a href="events.html">כנסים ואירועים</a>
-    <a href="gallery.html">גלריה</a>
-    <a href="about.html" class="is-active" aria-current="page">אודות</a>
-    <a href="contact.html">צור קשר</a>
-    <a href="contact.html" class="mobile-nav-drawer__cta">הזמינו עכשיו</a>
-  </nav>
-</aside>
+<div id="site-navbar"></div>
+<script src="js/navbar-component.js"></script>
 
 <main class="flex-grow">
 <!-- Heritage Section -->
@@ -200,7 +150,6 @@
   <i class="fa-brands fa-whatsapp"></i>
 </a>
 
-<script src="js/nav.js"></script>
 </body>
 </html>
 
