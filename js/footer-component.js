@@ -9,8 +9,8 @@
 <footer class="site-footer">
   <div class="site-footer__inner">
     <div class="site-footer__copy">
-      <p>© 2024 Miami Hotel Ashdod.</p>
-      <p>Glatt Kosher Lemehadrin.</p>
+      <p>© 2024 Miami Hotel Ashdod</p>
+      <p>Glatt Kosher Lemehadrin</p>
     </div>
     <div class="site-footer__links">
       <a href="#">תנאי שימוש</a>
