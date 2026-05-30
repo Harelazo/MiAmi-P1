@@ -7,13 +7,10 @@
   <div class="header-inner">
     <button id="mobile-menu-trigger" class="nav-toggle" aria-label="פתח תפריט" aria-expanded="false" type="button">
       <span class="material-symbols-outlined text-4xl">menu</span>
-    </button>
-
-    <a href="index.html" class="block hover:opacity-80 transition-opacity" aria-label="לוגו מלון מיאמי אשדוד">
+    </button>    <a href="index.html" class="block hover:opacity-80 transition-opacity" aria-label="לוגו מלון מיעמי אשדוד">
       <img alt="Miami Hotel Ashdod Logo" class="h-12 w-auto object-contain"
-           src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfln3QJRSEBXnYt6NuUoTj2Mh65AoHHSnkNuaP2pzC9qCJ7hqEDCINqVupupRQRa1UnU4IJ59SNMW7c-7FgxoJtcNG3wGvk-i3NvyNrnyV08LbLCrkBmS72-zulopyR40Fz-9ivXeJTVNHNx5tRfT1pFZbyyD2cdcHlPRU62MOel740wAwOJaiwSzInyoQ4mFrE5SW-BP2e5S4h522_djjniERn5Jqd-uH_Lvhu1W-pbSQhAWb6BM6-d7LBW7AMpjNu3NKKqsIHy_R"/>
+           src="images/logo.png"/>
     </a>
-
     <nav class="nav-desktop" aria-label="תפריט ראשי">
       <a href="contact.html">צור קשר</a>
       <a href="about.html">אודות</a>
@@ -39,7 +36,7 @@
     </button>
     <a href="index.html">
       <img alt="Miami Hotel Ashdod Logo" class="h-12 w-auto object-contain"
-           src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfln3QJRSEBXnYt6NuUoTj2Mh65AoHHSnkNuaP2pzC9qCJ7hqEDCINqVupupRQRa1UnU4IJ59SNMW7c-7FgxoJtcNG3wGvk-i3NvyNrnyV08LbLCrkBmS72-zulopyR40Fz-9ivXeJTVNHNx5tRfT1pFZbyyD2cdcHlPRU62MOel740wAwOJaiwSzInyoQ4mFrE5SW-BP2e5S4h522_djjniERn5Jqd-uH_Lvhu1W-pbSQhAWb6BM6-d7LBW7AMpjNu3NKKqsIHy_R"/>
+           src="images/logo.png"/>
     </a>
   </div>
 

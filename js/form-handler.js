@@ -110,7 +110,7 @@
         </div>
         <h3 class="font-accent-serif text-2xl text-primary mb-3 font-bold">הפנייה נשלחה בהצלחה!</h3>
         <p class="font-body-main text-on-surface-variant mb-8 text-base">
-          תודה רבה שהשארתם פרטים. נציג של מלון מיאמי אשדוד יחזור אליכם בהקדם האפשרי.
+          תודה רבה שהשארתם פרטים. נציג של מלון מיעמי אשדוד יחזור אליכם בהקדם האפשרי.
         </p>
         <button id="close-success-modal" class="w-full bg-gold-accent text-white font-bold py-3.5 rounded-lg shadow-md hover:opacity-90 transition-opacity">
           סגור
