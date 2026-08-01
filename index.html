@@ -22,7 +22,7 @@
 </head>
 
 <body
-  class="bg-surface text-on-surface font-body-main text-body-main antialiased selection:bg-gold-accent selection:text-white">
+  class="bg-surface text-on-surface font-body-mai n text-body-main antialiased selection:bg-gold-accent selection:text-white">
 
   <div id="site-navbar"></div>
   <script src="js/navbar-component.js"></script>
@@ -46,7 +46,8 @@
       <h1
         class="font-display-hero-mobile text-display-hero-mobile md:font-display-hero md:text-display-hero text-on-primary mb-6 max-w-4xl leading-tight">
         אירוח חם על הים, <br> <span
-          class="text-transparent bg-clip-text bg-gradient-to-l from-gold-accent to-tertiary-fixed">חוויה משפחתית מושלמת.</span>
+          class="text-transparent bg-clip-text bg-gradient-to-l from-gold-accent to-tertiary-fixed">חוויה משפחתית
+          מושלמת.</span>
       </h1>
       <p class="font-body-main text-body-main text-surface-container-high max-w-2xl mb-10 text-lg opacity-90">
         מלון בוטיק על רצועת החוף היפהפייה של אשדוד. אנו מציעים שילוב נדיר של אלגנטיות מודרנית, אווירה משפחתית חמה,
@@ -83,7 +84,8 @@
             לנשום את הים,<br> להרגיש בבית.
           </h2>
           <p class="font-body-main text-body-main text-on-surface-variant mb-6">
-            מלון מיעמי אשדוד תוכנן בקפידה כדי להעניק לכם מפלט של שקט ורוגע באווירה משפחתית. עם עיצוב השואב השראה מגווני הים והחול, כל
+            מלון מיעמי אשדוד תוכנן בקפידה כדי להעניק לכם מפלט של שקט ורוגע באווירה משפחתית. עם עיצוב השואב השראה מגווני
+            הים והחול, כל
             פרט במלון נועד ליצור תחושת רוגע אינסופית.
           </p>
           <p class="font-body-main text-body-main text-on-surface-variant mb-8">
@@ -94,7 +96,8 @@
             <div class="flex items-start gap-3">
               <div
                 class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center flex-shrink-0 text-secondary">
-                <span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 0;">beach_access</span>
+                <span class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 0;">beach_access</span>
               </div>
               <div>
                 <h4 class="font-nav-link text-nav-link text-primary mb-1">קרבה לים</h4>
@@ -235,7 +238,8 @@
         </div>
         <h2 class="font-headline-section text-headline-section text-primary mb-4">מתמחים באירועים מיוחדים</h2>
         <p class="font-body-main text-body-main text-on-surface-variant max-w-2xl mx-auto text-base">
-          מחגיגות משפחתיות אינטימיות ועד כנסים עסקיים ואירועי חברה. העבירו את העכבר על הכרטיסים כדי לגלות את פרטי האירוח.
+          מחגיגות משפחתיות אינטימיות ועד כנסים עסקיים ואירועי חברה. העבירו את העכבר על הכרטיסים כדי לגלות את פרטי
+          האירוח.
         </p>
       </div>
 
@@ -368,19 +372,20 @@
       <div class="testimonials-tabs">
         <button class="testimonial-tab active" data-category="all">הכל</button>
         <button class="testimonial-tab" data-category="shabbat">שבת חתן ושמחות</button>
-        <button class="testimonial-tab" data-category="vacation">נופש משפחתי</button>
-        <button class="testimonial-tab" data-category="events">לקוחות עסקיים</button>
+        <button class="testimonial-tab" data-category="vacation">נופש משפחתי וחגים</button>
+        <button class="testimonial-tab" data-category="events">כנסים ואירועים</button>
       </div>
 
       <!-- Slider Container -->
       <div class="testimonials-slider-container">
         <div class="testimonials-track" id="testimonials-track">
-
           <!-- Slide 1: Shabbat Hatan -->
           <div class="testimonial-slide active" data-category="shabbat">
             <div class="testimonial-card">
               <span class="testimonial-card__quote">“</span>
-              <div class="testimonial-avatar">מא</div>
+              <div class="testimonial-avatar testimonial-avatar--photo">
+                <img src="images/moshe-ester-alkobi.png" alt="משה ואסתר אלקובי" loading="lazy" decoding="async">
+              </div>
               <div class="testimonial-stars">
                 <span class="material-symbols-outlined text-[20px]"
                   style="font-variation-settings: 'FILL' 1;">star</span>
@@ -393,19 +398,99 @@
                 <span class="material-symbols-outlined text-[20px]"
                   style="font-variation-settings: 'FILL' 1;">star</span>
               </div>
-              <p class="testimonial-text">"חגגנו שבת חתן לבננו במלון. השירות היה מעל ומעבר לציפיות. קיבלנו בית כנסת פרטי
-                וחדר אוכל נפרד רק למשפחה שלנו, מה שנתן לנו פרטיות מושלמת. האוכל בכשרות הרב מחפוד היה בשפע וברמה גבוהה
-                מאוד. מומלץ בחום!"</p>
+              <p class="testimonial-text">"חגגנו שבת חתן לבננו במלון. השירות היה מעל ומעבר לציפיות. קיבלנו בית כנסת
+                פרטי וחדר אוכל נפרד רק למשפחה שלנו, מה שנתן לנו פרטיות מושלמת. האוכל בכשרות הרב מחפוד היה בשפע וברמה
+                גבוהה מאוד. מומלץ בחום!"</p>
               <h4 class="testimonial-author">משה ואסתר אלקובי</h4>
               <span class="testimonial-tag">שבת חתן ושמחות</span>
             </div>
           </div>
 
-          <!-- Slide 2: Vacation -->
+          <!-- Slide 2: Pesach 2024 -->
           <div class="testimonial-slide" data-category="vacation">
             <div class="testimonial-card">
               <span class="testimonial-card__quote">“</span>
-              <div class="testimonial-avatar">רד</div>
+              <div class="testimonial-avatar testimonial-avatar--photo">
+                <img src="images/yacov_rechel_amsaelem.png" alt="יעקב ורחל אמסלם" loading="lazy" decoding="async">
+              </div>
+              <div class="testimonial-stars">
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+              <p class="testimonial-text">"התארחנו בפסח 2024 כל המשפחה המורחבת. היינו קצת חוששים אבל הכל היה מתוקתק!
+                סדר כהלכתו, סעודות חג כיד המלך ושפע שאין כדוגמתו. הילדים נהנו מכל רגע והאווירה היתה ביתית וחמה."</p>
+              <h4 class="testimonial-author">יעקב ורחל אמסלם</h4>
+              <span class="testimonial-tag">נופש משפחתי וחגים</span>
+            </div>
+          </div>
+
+          <!-- Slide 3: Rosh Hashanah 2025 -->
+          <div class="testimonial-slide" data-category="vacation">
+            <div class="testimonial-card">
+              <span class="testimonial-card__quote">“</span>
+              <div class="testimonial-avatar testimonial-avatar--photo">
+                <img src="images/shimon-ilana-hadad.png" alt="יעקב ורחל אמסלם" loading="lazy" decoding="async">
+              </div>
+              <div class="testimonial-stars">
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+              <p class="testimonial-text">"את ראש השנה 2025 חגגנו במלון מיעמי וזו הייתה החלטה מעולה. התפילות היו
+                מרגשות, הארוחות היו עשירות עם כל הסימנים והמנהגים. שירות אדיב מכל הלב והרגשה של משפחה אחת גדולה."</p>
+              <h4 class="testimonial-author">שמעון ואילנה חדד</h4>
+              <span class="testimonial-tag">נופש משפחתי וחגים</span>
+            </div>
+          </div>
+
+          <!-- Slide 4: Shabbat Hatan -->
+          <div class="testimonial-slide" data-category="shabbat">
+            <div class="testimonial-card">
+              <span class="testimonial-card__quote">“</span>
+              <div class="testimonial-avatar testimonial-avatar--photo">
+                <img src="images/david-zahava-ohana.png" alt="יעקב ורחל אמסלם" loading="lazy" decoding="async">
+              </div>
+              <div class="testimonial-stars">
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+              <p class="testimonial-text">"חגגנו שבת בר מצווה לבן הקטן. היחס של הצוות, הדאגה לכל הפרטים הקטנים,
+                הניקיון בחדרים והאוכל המשובח הפכו את השבת לבלתי נשכחת. כל האורחים שלנו לא הפסיקו להרעיף מחמאות."</p>
+              <h4 class="testimonial-author">דוד וזהבה אוחנה</h4>
+              <span class="testimonial-tag">שבת חתן ושמחות</span>
+            </div>
+          </div>
+
+          <!-- Slide 5: Vacation -->
+          <div class="testimonial-slide" data-category="vacation">
+            <div class="testimonial-card">
+              <span class="testimonial-card__quote">“</span>
+              <div class="testimonial-avatar testimonial-avatar--photo">
+                <img src="images/rachel-ilan-dahan.png" alt="יעקב ורחל אמסלם" loading="lazy" decoding="async">
+              </div>
               <div class="testimonial-stars">
                 <span class="material-symbols-outlined text-[20px]"
                   style="font-variation-settings: 'FILL' 1;">star</span>
@@ -419,18 +504,20 @@
                   style="font-variation-settings: 'FILL' 1;">star</span>
               </div>
               <p class="testimonial-text">"חיפשנו מקום נקי, שומר שבת וכשרות, קרוב לים ובמחיר הוגן למשפחה. מלון מיעמי
-                סיפק תמורה מושלמת למחיר. החדרים היו נקיים ומסודרים, הטיילת ממש מעבר לכביש, והחניה חינם חסכה לנו המון כאב
-                ראש."</p>
+                סיפק תמורה מושלמת למחיר. החדרים היו נקיים ומסודרים, הטיילת ממש מעבר לכביש, והחניה חינם חסכה לנו המון
+                כאב ראש."</p>
               <h4 class="testimonial-author">רחל ואילן דהן</h4>
-              <span class="testimonial-tag">נופש משפחתי</span>
+              <span class="testimonial-tag">נופש משפחתי וחגים</span>
             </div>
           </div>
 
-          <!-- Slide 3: Business -->
-          <div class="testimonial-slide" data-category="events">
+          <!-- Slide 6: Shabbat Hatan -->
+          <div class="testimonial-slide" data-category="shabbat">
             <div class="testimonial-card">
               <span class="testimonial-card__quote">“</span>
-              <div class="testimonial-avatar">יל</div>
+              <div class="testimonial-avatar testimonial-avatar--photo">
+                <img src="images/eli-yoram-vaknin.png" alt="יעקב ורחל אמסלם" loading="lazy" decoding="async">
+              </div>
               <div class="testimonial-stars">
                 <span class="material-symbols-outlined text-[20px]"
                   style="font-variation-settings: 'FILL' 1;">star</span>
@@ -441,18 +528,120 @@
                 <span class="material-symbols-outlined text-[20px]"
                   style="font-variation-settings: 'FILL' 1;">star</span>
                 <span class="material-symbols-outlined text-[20px]"
-                  style="font-variation-settings: 'FILL' 0;">star</span>
+                  style="font-variation-settings: 'FILL' 1;">star</span>
               </div>
-              <p class="testimonial-text">"קיימנו יום עיון מרוכז לצוות המנהלים שלנו במלון. חלל האירוח היה מאובזר היטב,
-                עמדת הקפה והכיבוד היו עשירים והשירות היה אדיב ויעיל. המיקום הנוח באשדוד והחניה החופשית היו יתרון גדול."
-              </p>
-              <h4 class="testimonial-author">ירון לוי, מנהל פרויקטים</h4>
-              <span class="testimonial-tag">לקוחות עסקיים</span>
+              <p class="testimonial-text">"שבת חתן שניה שאנחנו עושים כאן במשפחה! מפנקים מכל הלב, סלטים מטורפים, בשרים
+                כיד המלך והכי חשוב - תחושה שדואגים לך כאילו אתה האורח היחיד במלון."</p>
+              <h4 class="testimonial-author">אלי ויורם ועקנין</h4>
+              <span class="testimonial-tag">שבת חתן ושמחות</span>
+            </div>
+          </div>
+
+          <!-- Slide 7: Events -->
+          <div class="testimonial-slide" data-category="events">
+            <div class="testimonial-card">
+              <span class="testimonial-card__quote">“</span>
+              <div class="testimonial-avatar testimonial-avatar--photo">
+                <img src="images/yaron-levi.png" alt="יעקב ורחל אמסלם" loading="lazy" decoding="async">
+              </div>
+              <div class="testimonial-stars">
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+              <p class="testimonial-text">"ארגנו כנס יום עיון במלון והיה מצוין. חלל האירוח היה מאובזר, הציוד הטכני עבד
+                מעולה, ועמדות הקפה והכיבוד היו עשירות ומכובדות מאוד. השירות של הצוות היה מהיר ויעיל."</p>
+              <h4 class="testimonial-author">ירון לוי</h4>
+              <span class="testimonial-tag">כנסים ואירועים</span>
+            </div>
+          </div>
+
+          <!-- Slide 8: Pesach 2024 -->
+          <div class="testimonial-slide" data-category="vacation">
+            <div class="testimonial-card">
+              <span class="testimonial-card__quote">“</span>
+              <div class="testimonial-avatar testimonial-avatar--photo">
+                <img src="images/gabi-avigail-swisa.png" alt="יעקב ורחל אמסלם" loading="lazy" decoding="async">
+              </div>
+              <div class="testimonial-stars">
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+              <p class="testimonial-text">"פסח 2024 במלון היה פשוט חוויה מתקנת. הכל נקי ברמה של חמץ שנעלם לחלוטין,
+                הכשרות המהודרת נתנה לנו שקט נפשי מלא, והאוכל היה פשוט תענוג קולינרי. נחזור ללא ספק!"</p>
+              <h4 class="testimonial-author">גבי ואביגיל סויסה</h4>
+              <span class="testimonial-tag">נופש משפחתי וחגים</span>
+            </div>
+          </div>
+
+          <!-- Slide 9: Events/Family Celebration -->
+          <div class="testimonial-slide" data-category="events">
+            <div class="testimonial-card">
+              <span class="testimonial-card__quote">“</span>
+              <div class="testimonial-avatar testimonial-avatar--photo">
+                <img src="images/meir-orli-cohen.png" alt="יעקב ורחל אמסלם" loading="lazy" decoding="async">
+              </div>
+              <div class="testimonial-stars">
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+              <p class="testimonial-text">"ערכנו במלון אירוע ברית מילה לנכד. האולם היה מעוצב יפהפה, האוכל הוגש חם וטרי
+                והאורחים לא הפסיקו להחמיא על הרמה והשפע. תודה רבה לכל צוות המלון על האירוח הנפלא."</p>
+              <h4 class="testimonial-author">מאיר ואורלי כהן</h4>
+              <span class="testimonial-tag">כנסים ואירועים</span>
+            </div>
+          </div>
+
+          <!-- Slide 10: Vacation -->
+          <div class="testimonial-slide" data-category="vacation">
+            <div class="testimonial-card">
+              <span class="testimonial-card__quote">“</span>
+              <div class="testimonial-avatar testimonial-avatar--photo">
+                <img src="images/haim-mazal-biton.png" alt="יעקב ורחל אמסלם" loading="lazy" decoding="async">
+              </div>
+              <div class="testimonial-stars">
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+              <p class="testimonial-text">"הגענו לסוף שבוע קצר של מנוחה. הקרבה לים, האווירה הרגועה, ארוחת הבוקר העשירה
+                והיחס החם של בעלי המלון הפכו את השהות לנפלאה. מומלץ מאוד לכל מי שמחפש שקט ואווירה טובה."</p>
+              <h4 class="testimonial-author">חיים ומזל ביטון</h4>
+              <span class="testimonial-tag">נופש משפחתי וחגים</span>
             </div>
           </div>
 
         </div>
-
         <!-- Navigation Arrows -->
         <div class="testimonials-nav">
           <button class="testimonial-arrow prev-btn" id="prev-testimonial-btn" aria-label="הקודם">
@@ -498,8 +687,7 @@
           </button>
           <div class="faq-answer-wrapper">
             <div class="faq-answer">
-              המטבח והקייטרינג במלון מיעמי אשדוד מתנהלים תחת השגחת כשרות למהדרין קפדנית ביותר של **הרב מחפוד (בד"ץ יורה
-              דעה)**. זהו תו תקן משמעותי המעניק לציבור הדתי והחרדי ביטחון מלא ושקט נפשי לאורך כל השהות והאירועים אצלנו.
+              כל הארוחות במלון מוגשות בכשרות מהדרין למהדרין בהשגחת הרב מחפוד.
             </div>
           </div>
         </div>
@@ -512,8 +700,7 @@
           </button>
           <div class="faq-answer-wrapper">
             <div class="faq-answer">
-              אנו מציעים **חניה חופשית וחינם בשפע** לכלל אורחי המלון והאירועים. זהו יתרון משמעותי במיוחד באזור רצועת
-              החוף והטיילת באשדוד, שבהם מקומות החניה מוגבלים מאוד או כרוכים בתשלום עירוני יומי.
+              לאורחי המלון זמינה חניה ללא תשלום, בהתאם לזמינות.
             </div>
           </div>
         </div>
@@ -521,14 +708,12 @@
         <!-- Question 3 -->
         <div class="faq-item">
           <button class="faq-header" aria-expanded="false">
-            <span class="faq-question">האם יש נוף ישיר לים מתוך חדרי המלון?</span>
+            <span class="faq-question">מהם היתרונות שלכם באירוח שבתות חתן, חגים ושמחות משפחתיות?</span>
             <span class="material-symbols-outlined faq-icon-toggle">add</span>
           </button>
           <div class="faq-answer-wrapper">
             <div class="faq-answer">
-              המלון ממוקם במיקום מצוין על טיילת החוף של אשדוד ובמרחק הליכה קצר ביותר של פחות מ-2 דקות מרצועת החוף
-              המטופחת. עם זאת, **אין למלון נוף ישיר לים מתוך החדרים**. עיצוב המלון שואב השראה מגווני הים והחול ומציע
-              בריזה נהדרת מהמרפסות.
+              המלון מציע אירוח משפחתי, חדרי אוכל, בתי כנסת ושירות חם שמתאים למשפחות שרוצות לחגוג יחד בנוחות.
             </div>
           </div>
         </div>
@@ -536,29 +721,13 @@
         <!-- Question 4 -->
         <div class="faq-item">
           <button class="faq-header" aria-expanded="false">
-            <span class="faq-question">מהם היתרונות שלכם באירוח שבתות חתן ושמחות משפחתיות?</span>
-            <span class="material-symbols-outlined faq-icon-toggle">add</span>
-          </button>
-          <div class="faq-answer-wrapper">
-            <div class="faq-answer">
-              מלון מיעמי מתמחה באירוח אירועים משפחתיים ומציע יתרון ייחודי: **פרטיות מלאה**. במלון קיימים שני בתי כנסת
-              מפוארים ושני חדרי אוכל נפרדים לחלוטין. הדבר מאפשר לנו לארח את השבת שלכם בפרטיות מוחלטת ללא ערבוב עם אורחים
-              אחרים, בליווי שירות חם ועוטף.
-            </div>
-          </div>
-        </div>
-
-        <!-- Question 5 -->
-        <div class="faq-item">
-          <button class="faq-header" aria-expanded="false">
             <span class="faq-question">אילו מתקנים קיימים במלון?</span>
             <span class="material-symbols-outlined faq-icon-toggle">add</span>
           </button>
           <div class="faq-answer-wrapper">
             <div class="faq-answer">
-              המלון מציע לינה בחדרים נקיים, נוחים ומשפחתיים (כולל WiFi חופשי, מיזוג אוויר וטלוויזיה), בתי כנסת פרטיים,
-              חדרי אוכל ואולמות אירועים קטנים. על מנת לתאם ציפיות בצורה כנה, **המלון אינו כולל בריכה, ספא או חדר כושר**.
-              אנו מתמקדים במתן אירוח נקי, משפחתי ותמורה מעולה למחיר.
+              במלון יש חדרים ממוזגים, WiFi, טלוויזיה, חדרי אוכל ובתי כנסת. אין במלון בריכה, ספא או חדר כושר, אך הוא
+              ממוקם במרחק הליכה קצר מהים.
             </div>
           </div>
         </div>
@@ -690,7 +859,8 @@
             <h3 class="text-2xl font-bold text-white mb-6 text-center">פרטי השהות או האירוע</h3>
             <div class="flex flex-col gap-6 text-right">
               <!-- Selected Room Info Box -->
-              <div id="selected-room-info" class="hidden bg-white/5 border border-mustard-accent/20 rounded-xl p-4 text-white">
+              <div id="selected-room-info"
+                class="hidden bg-white/5 border border-mustard-accent/20 rounded-xl p-4 text-white">
                 <div class="flex items-center justify-between">
                   <div class="flex items-center gap-3">
                     <span class="material-symbols-outlined text-mustard-accent text-2xl">bed</span>
@@ -699,21 +869,25 @@
                       <span id="selected-room-name" class="font-bold text-base text-white"></span>
                     </div>
                   </div>
-                  <button type="button" id="clear-room-selection" class="text-xs text-white/50 hover:text-white underline transition-colors cursor-pointer">הסר חדר</button>
+                  <button type="button" id="clear-room-selection"
+                    class="text-xs text-white/50 hover:text-white underline transition-colors cursor-pointer">הסר
+                    חדר</button>
                 </div>
               </div>
               <!-- Dynamic USP Banner -->
-              <div id="dynamic-usp-banner" class="hidden bg-white/5 border border-mustard-accent/20 rounded-xl p-4 text-mustard-accent text-sm select-none">
+              <div id="dynamic-usp-banner"
+                class="hidden bg-white/5 border border-mustard-accent/20 rounded-xl p-4 text-mustard-accent text-sm select-none">
                 <div class="flex items-start gap-2.5">
-                  <span class="material-symbols-outlined text-mustard-accent text-[20px] flex-shrink-0" id="dynamic-usp-icon">info</span>
+                  <span class="material-symbols-outlined text-mustard-accent text-[20px] flex-shrink-0"
+                    id="dynamic-usp-icon">info</span>
                   <p id="dynamic-usp-text" class="leading-relaxed"></p>
                 </div>
               </div>
               <!-- Date Pickers -->
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-[480px] w-full">
                 <div class="flex flex-col gap-2">
-                  <label class="text-sm font-semibold text-white/95" for="form-date-start"
-                    id="date-start-label">תאריך הגעה</label>
+                  <label class="text-sm font-semibold text-white/95" for="form-date-start" id="date-start-label">תאריך
+                    הגעה</label>
                   <input type="text" id="form-date-start" name="date_start" placeholder="dd/mm/yyyy" lang="en"
                     class="w-full bg-white/10 border border-white/20 rounded-xl p-3 text-white focus:outline-none focus:border-mustard-accent transition-colors"
                     required>
@@ -727,7 +901,8 @@
 
               <!-- Nights Count Display -->
               <div id="nights-count-wrapper" class="hidden mt-[-0.5rem] select-none">
-                <div class="inline-flex items-center gap-2 bg-mustard-accent/15 border border-mustard-accent/30 rounded-lg px-3 py-1.5 text-mustard-accent text-sm font-semibold">
+                <div
+                  class="inline-flex items-center gap-2 bg-mustard-accent/15 border border-mustard-accent/30 rounded-lg px-3 py-1.5 text-mustard-accent text-sm font-semibold">
                   <span class="material-symbols-outlined text-base">nights_stay</span>
                   <span>סה"כ:</span>
                   <span id="nights-count-text"></span>
@@ -1197,7 +1372,7 @@
             dateEndInput.setAttribute('required', 'required');
           }
           if (shabbatNote) shabbatNote.classList.add('hidden');
-          
+
           // Show room selection info if we have one
           if (roomInput && roomInput.value && roomInfo) {
             roomInfo.classList.remove('hidden');
@@ -1213,7 +1388,7 @@
           dateEndWrapper.style.display = 'none';
           dateEndInput.removeAttribute('required');
           if (shabbatNote) shabbatNote.classList.remove('hidden');
-          
+
           // Hide room selection info for other event types
           if (roomInfo) {
             roomInfo.classList.add('hidden');
@@ -1229,7 +1404,7 @@
           dateEndWrapper.style.display = 'none';
           dateEndInput.removeAttribute('required');
           if (shabbatNote) shabbatNote.classList.add('hidden');
-          
+
           // Hide room selection info for other event types
           if (roomInfo) {
             roomInfo.classList.add('hidden');
@@ -1463,7 +1638,7 @@
         if (startVal && endVal) {
           const diffTime = Math.abs(endVal - startVal);
           const diffDays = Math.round(diffTime / (1000 * 60 * 60 * 24));
-          
+
           if (diffDays > 0) {
             let label = '';
             if (diffDays === 1) {
@@ -1489,7 +1664,7 @@
           if (roomInput.value === "couple") roomNameHebrew = "חדר זוגי סטנדרט";
           else if (roomInput.value === "family") roomNameHebrew = "חדר משפחתי מרווח";
           else if (roomInput.value === "jacuzzi") roomNameHebrew = "חדר זוגי עם ג'קוזי";
-          
+
           if (roomNameHebrew && successText) {
             successText.innerHTML = `תודה שבחרת במלון מיעמי אשדוד. מנהל האירועים והחופשות שלנו יעבור על פרטי הבקשה שלך עבור <strong>${roomNameHebrew}</strong> ויחזור אליך טלפונית עם הצעה מותאמת אישית תוך 24 שעות.`;
           }
@@ -1635,11 +1810,11 @@
         const roomInput = document.getElementById('form-room-type');
         const roomInfo = document.getElementById('selected-room-info');
         const roomNameEl = document.getElementById('selected-room-name');
-        
+
         if (roomInput) {
           roomInput.value = roomParam;
         }
-        
+
         let roomNameHebrew = "";
         if (roomParam === "couple") {
           roomNameHebrew = "חדר זוגי סטנדרט";
@@ -1648,7 +1823,7 @@
         } else if (roomParam === "jacuzzi") {
           roomNameHebrew = "חדר זוגי עם ג'קוזי";
         }
-        
+
         if (roomNameHebrew) {
           if (roomNameEl) {
             roomNameEl.textContent = roomNameHebrew;
